@@ -57,7 +57,8 @@ exec $local, @ARGV;
 sub fetch {
     my ( $remote_path, $local_path ) = @_;
 
-    INFO("Fetching $remote_path\n");
+    # TODO: print this to STDERR
+    # INFO("Fetching $remote_path\n");
     if ( bin_exists('wget') ) {
         system("wget -q $remote_path -O $local_path");
     }
