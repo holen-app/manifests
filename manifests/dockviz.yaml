@@ -1,0 +1,15 @@
+---
+desc: Visualizing Docker data
+strategies:
+    docker:
+        image: nate/dockviz:{{.Version}}
+        docker_conn: true
+        versions:
+          - version: 'v0.4.2'
+          - version: 'v0.4.1'
+    binary:
+        base_url: https://github.com/justone/dockviz/releases/download/{{.Version}}/dockviz_{{.OSArch}}
+        versions:
+          - version: 'v0.4.2'
+          - version: 'v0.4.1'
+...
