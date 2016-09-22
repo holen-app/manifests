@@ -1,0 +1,10 @@
+---
+desc: Download videos from Youtube
+strategies:
+    docker:
+        image: vimagick/youtube-dl:{{.Version}}
+        run_as_user: true
+        mount_pwd_as: /data
+        versions:
+          - version: 'latest'
+...
