@@ -1,0 +1,8 @@
+---
+desc: Personal Message Bus
+strategies:
+    binary:
+        base_url: http://get.pmb.io/{{.Version}}/pmb_{{.OSArch}}
+        versions:
+          - version: '2016-07-20-1402-0293073'
+...
