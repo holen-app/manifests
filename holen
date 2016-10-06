@@ -57,8 +57,7 @@ exec $local, @ARGV;
 sub fetch {
     my ( $remote_path, $local_path ) = @_;
 
-    # TODO: print this to STDERR
-    # INFO("Fetching $remote_path\n");
+    INFO("Downloading $remote_path...\n");
     if ( bin_exists('wget') ) {
         system("wget -q $remote_path -O $local_path");
     }
@@ -120,12 +119,12 @@ sub check_sum {
 
 sub DEBUG {
     if ( $ENV{HLN_BOOTSTRAP_DEBUG} ) {
-        print @_;
+        print STDERR @_;
     }
 }
 
 sub INFO {
-    print @_;
+    print STDERR @_;
 }
 
 __END__
