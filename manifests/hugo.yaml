@@ -1,0 +1,20 @@
+---
+desc: A Fast & Modern Static Website Engine
+strategies:
+    docker:
+        image: jemmyw/jq:{{.Version}}
+        versions:
+          - version: '1.5'
+    binary:
+        base_url: https://github.com/spf13/hugo/releases/download/v{{.Version}}/hugo_{{.Version}}_{{.MappedOSArch}}
+        unpack_path: hugo_{{.Version}}_{{.OSArch}}/hugo_{{.Version}}_{{.OSArch}}
+        os_arch_map:
+            linux_amd64: Linux-64bit.tar.gz
+            darwin_amd64: MacOS-64bit.zip
+        versions:
+          - version: '0.17'
+          - version: '0.16'
+            unpack_path: hugo
+            os_arch_map:
+                linux_amd64: linux-64bit.tgz
+                darwin_amd64: osx-64bit.tgz
