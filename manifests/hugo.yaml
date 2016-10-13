@@ -1,10 +1,6 @@
 ---
 desc: A Fast & Modern Static Website Engine
 strategies:
-    docker:
-        image: jemmyw/jq:{{.Version}}
-        versions:
-          - version: '1.5'
     binary:
         base_url: https://github.com/spf13/hugo/releases/download/v{{.Version}}/hugo_{{.Version}}_{{.MappedOSArch}}
         unpack_path: hugo_{{.Version}}_{{.OSArch}}/hugo_{{.Version}}_{{.OSArch}}
