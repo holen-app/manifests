@@ -9,7 +9,7 @@ strategies:
           - version: '1.8.0'
           - version: '1.7.1'
     binary:
-        base_url: https://github.com/docker/compose/releases/download/{{.Version}}/docker-compose-{{.MappedArch}}
+        base_url: https://github.com/docker/compose/releases/download/{{.Version}}/docker-compose-{{.MappedOSArch}}
         os_arch_map:
             windows_amd64: Windows-x86_64.exe
             linux_amd64: Linux-x86_64
