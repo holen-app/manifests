@@ -2,15 +2,19 @@
 desc: A Fast & Modern Static Website Engine
 strategies:
     binary:
-        base_url: https://github.com/spf13/hugo/releases/download/v{{.Version}}/hugo_{{.Version}}_{{.MappedOSArch}}
+        base_url: https://github.com/spf13/hugo/releases/download/v{{.Version}}/hugo_{{.Version}}_{{.OSArchData.ext}}
         unpack_path: hugo_{{.Version}}_{{.OSArch}}/hugo_{{.Version}}_{{.OSArch}}
-        os_arch_map:
-            linux_amd64: Linux-64bit.tar.gz
-            darwin_amd64: MacOS-64bit.zip
+        os_arch:
+            linux_amd64:
+                ext: Linux-64bit.tar.gz
+            darwin_amd64:
+                ext: MacOS-64bit.zip
         versions:
           - version: '0.17'
           - version: '0.16'
             unpack_path: hugo
-            os_arch_map:
-                linux_amd64: linux-64bit.tgz
-                darwin_amd64: osx-64bit.tgz
+            os_arch:
+                linux_amd64:
+                    ext: linux-64bit.tgz
+                darwin_amd64:
+                    ext: osx-64bit.tgz
