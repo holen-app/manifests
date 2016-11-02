@@ -1,0 +1,3 @@
+Docker Strategy (version: latest):
+  final image: vimagick/youtube-dl:latest
+  final command: docker run -i --volume /home/nate/holen-manifests:/data -u 1000:1000 --rm vimagick/youtube-dl:latest [args]

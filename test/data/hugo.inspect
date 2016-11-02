@@ -1,0 +1,6 @@
+Binary Strategy (version: 0.17):
+  final url: https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+  final unpack path: hugo_0.17_linux_amd64/hugo_0.17_linux_amd64
+Binary Strategy (version: 0.16):
+  final url: https://github.com/spf13/hugo/releases/download/v0.16/hugo_0.16_linux-64bit.tgz
+  final unpack path: hugo

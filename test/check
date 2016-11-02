@@ -1,0 +1,21 @@
+#!/bin/bash
+
+for full in manifests/*; do
+    filename=$(basename $full)
+    filename=${filename%.*}
+    echo $filename
+
+    outputfile=$(mktemp)
+    if ! ./holen inspect $filename > $outputfile; then
+        echo "error running inspect for $filename"
+        exit 1
+    fi
+
+    if ! diffoutput=$(diff $outputfile test/data/${filename}.inspect); then
+        echo "inspect changed for $filename"
+        echo "$diffoutput"
+        exit 1
+    fi
+
+    rm $outputfile
+done

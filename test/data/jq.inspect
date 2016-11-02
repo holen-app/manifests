@@ -1,0 +1,7 @@
+Docker Strategy (version: 1.5):
+  final image: jemmyw/jq:1.5
+  final command: docker run -i --rm jemmyw/jq:1.5 [args]
+Binary Strategy (version: 1.5):
+  final url: https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
+Binary Strategy (version: 1.4):
+  final url: https://github.com/stedolan/jq/releases/download/jq-1.4/jq-linux-x86_64

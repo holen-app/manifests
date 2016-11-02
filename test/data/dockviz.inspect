@@ -1,0 +1,10 @@
+Docker Strategy (version: v0.4.2):
+  final image: nate/dockviz:v0.4.2
+  final command: docker run -i -v /var/run/docker.sock:/var/run/docker.sock --rm nate/dockviz:v0.4.2 [args]
+Docker Strategy (version: v0.4.1):
+  final image: nate/dockviz:v0.4.1
+  final command: docker run -i -v /var/run/docker.sock:/var/run/docker.sock --rm nate/dockviz:v0.4.1 [args]
+Binary Strategy (version: v0.4.2):
+  final url: https://github.com/justone/dockviz/releases/download/v0.4.2/dockviz_linux_amd64
+Binary Strategy (version: v0.4.1):
+  final url: https://github.com/justone/dockviz/releases/download/v0.4.1/dockviz_linux_amd64

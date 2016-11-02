@@ -1,0 +1,10 @@
+Docker Strategy (version: 1.8.0):
+  final image: docker/compose:1.8.0
+  final command: docker run -i -v /var/run/docker.sock:/var/run/docker.sock --volume /home/nate/holen-manifests:/home/nate/holen-manifests --rm docker/compose:1.8.0 [args]
+Docker Strategy (version: 1.7.1):
+  final image: docker/compose:1.7.1
+  final command: docker run -i -v /var/run/docker.sock:/var/run/docker.sock --volume /home/nate/holen-manifests:/home/nate/holen-manifests --rm docker/compose:1.7.1 [args]
+Binary Strategy (version: 1.8.0):
+  final url: https://github.com/docker/compose/releases/download/1.8.0/docker-compose-Linux-x86_64
+Binary Strategy (version: 1.7.1):
+  final url: https://github.com/docker/compose/releases/download/1.7.1/docker-compose-Linux-x86_64
