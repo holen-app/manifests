@@ -7,7 +7,9 @@ strategies:
         os_arch:
             linux_amd64:
                 ext: linux64.zip
+                sha256sum: 51c3610ea7e0624920dd7fe3b7dfaa64ec257cbe08607f513a25d12251a23983
             darwin_amd64:
                 ext: mac.zip
+                sha256sum: 995ef45d0adf88b91fd3cd8da16440c74fb8505e578d7096b90b1386c4aebb43
         versions:
           - version: '1.0.0-alpha1'
