@@ -1,0 +1,13 @@
+---
+desc: Fast, cross-platform, standalone ClojureScript REPL
+strategies:
+    binary:
+        base_url: https://github.com/anmonteiro/lumo/releases/download/{{.Version}}/lumo_{{.OSArchData.ext}}
+        unpack_path: lumo
+        os_arch:
+            linux_amd64:
+                ext: linux64.zip
+            darwin_amd64:
+                ext: mac.zip
+        versions:
+          - version: '1.0.0-alpha1'
