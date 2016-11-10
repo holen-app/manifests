@@ -1,0 +1,14 @@
+---
+desc: It's like curl -v, with colours.
+strategies:
+    binary:
+        base_url: https://github.com/davecheney/httpstat/releases/download/{{.Version}}/httpstat-{{.OSArchData.ext}}
+        os_arch:
+            linux_amd64:
+                ext: linux-amd64-v1.0.0
+                sha256sum: 9edc7d57a1c726b8a357ea61d9aa3f7c8c75a69777ca21e2afdf5f8331a9ecbc
+            darwin_amd64:
+                ext: darwin-amd64-v1.0.0
+                sha256sum: 552b5945ed8d3ef0a9bdea12c29112aa9b27ffba9eebfb7618d8ac8121f50503
+        versions:
+          - version: 'v1.0.0'
