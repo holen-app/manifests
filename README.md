@@ -5,7 +5,7 @@ These are manifests and supporting files for use with the
 
 # Quick Start
 
-1. Clone this repository: `git clone https://github.com/justone/holen.git`
+1. Clone this repository: `git clone https://github.com/justone/holen-manifests.git`
 2. Add the bin path to your PATH: `export PATH=$PATH:$PWD/holen-manifests/bin`
 3. Run any utility by just typing its name.
 
