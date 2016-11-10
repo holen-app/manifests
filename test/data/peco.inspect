@@ -1,0 +1,4 @@
+Binary Strategy (version: v0.4.5):
+  final url: https://github.com/peco/peco/releases/download/v0.4.5/peco_linux_amd64.tar.gz
+  final unpack path: peco_linux_amd64/peco
+  checksum with sha256: 2a6a8fa8c52d14dfb8a0861079e755421f13b67589406a98987875ea92a7881d

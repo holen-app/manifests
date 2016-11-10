@@ -1,0 +1,18 @@
+---
+desc: Simplistic interactive filtering tool
+strategies:
+    binary:
+        base_url: https://github.com/peco/peco/releases/download/{{.Version}}/peco_{{.OSArchData.ext}}
+        unpack_path: peco_{{.OSArch}}/peco
+        os_arch:
+            linux_amd64:
+                ext: linux_amd64.tar.gz
+            darwin_amd64:
+                ext: darwin_amd64.zip
+        versions:
+          - version: 'v0.4.5'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 2a6a8fa8c52d14dfb8a0861079e755421f13b67589406a98987875ea92a7881d
+                darwin_amd64:
+                    sha256sum: 06a6303a209838e0a681079c556c284a8835f42cbc91f016dfe698397b5cd579
