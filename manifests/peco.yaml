@@ -1,3 +1,4 @@
+#!/usr/bin/env holen
 ---
 desc: Simplistic interactive filtering tool
 strategies:

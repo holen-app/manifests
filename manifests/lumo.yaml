@@ -1,3 +1,4 @@
+#!/usr/bin/env holen
 ---
 desc: Fast, cross-platform, standalone ClojureScript REPL
 strategies:

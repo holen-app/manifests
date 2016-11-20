@@ -1,3 +1,4 @@
+#!/usr/bin/env holen
 ---
 desc: It's like curl -v, with colours.
 strategies:

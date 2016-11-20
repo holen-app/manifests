@@ -1,4 +1,5 @@
---- # jq
+#!/usr/bin/env holen
+---
 desc: Lightweight and flexible command-line JSON processor
 strategies:
     docker:
