@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: A Distributed, Highly Available, Datacenter-Aware Scheduler
+strategies:
+    binary:
+        base_url: https://releases.hashicorp.com/nomad/{{.Version}}/nomad_{{.Version}}_{{.OSArch}}.zip
+        unpack_path: nomad
+        versions:
+          - version: '0.5.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 7f7b9af2b1ff3e2c6b837b6e95968415237bb304e1e82802bc42abf6f8645a43
+                darwin_amd64:
+                    sha256sum: a063a1d1af7012da32dfe11ca8b02324e83e242ff8e8bd27dc00553f1b1a0499

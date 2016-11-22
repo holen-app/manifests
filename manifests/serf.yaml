@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Service orchestration and management tool.
+strategies:
+    binary:
+        base_url: https://releases.hashicorp.com/serf/{{.Version}}/serf_{{.Version}}_{{.OSArch}}.zip
+        unpack_path: serf
+        versions:
+          - version: '0.8.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 67620e000fea28c3755e21d475a97fd65ad397df02c60c0e801ae2d521587b77
+                darwin_amd64:
+                    sha256sum: 61bd6b853b33cc93d1de5ff639555360f677fffd2e5b9534e37faa20fa88387a

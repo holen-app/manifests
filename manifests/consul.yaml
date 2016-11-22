@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Consul is a tool for service discovery, monitoring and configuration.
+strategies:
+    binary:
+        base_url: https://releases.hashicorp.com/consul/{{.Version}}/consul_{{.Version}}_{{.OSArch}}.zip
+        unpack_path: consul
+        versions:
+          - version: '0.7.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 5dbfc555352bded8a39c7a8bf28b5d7cf47dec493bc0496e21603c84dfe41b4b
+                darwin_amd64:
+                    sha256sum: 9b3a199779a0d9b92266fae2abd7ed91c18ba437eba46e76114cd1940b3b7741

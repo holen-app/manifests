@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
+strategies:
+    binary:
+        base_url: https://releases.hashicorp.com/packer/{{.Version}}/packer_{{.Version}}_{{.OSArch}}.zip
+        unpack_path: packer
+        versions:
+          - version: '0.12.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: ce6362d527ba697e40b8c90a98d2034b7749e2357fa238b08536aed44f037073
+                darwin_amd64:
+                    sha256sum: e3f25ad619f35e10a4195c971d78f29abceb16877bbf2bd75182140373d02bd3

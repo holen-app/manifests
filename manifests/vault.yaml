@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: A tool for managing secrets.
+strategies:
+    binary:
+        base_url: https://releases.hashicorp.com/vault/{{.Version}}/vault_{{.Version}}_{{.OSArch}}.zip
+        unpack_path: vault
+        versions:
+          - version: '0.6.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 91432c812b1264306f8d1ecf7dd237c3d7a8b2b6aebf4f887e487c4e7f69338c
+                darwin_amd64:
+                    sha256sum: b5e6fadfed6a5226d96714f5ddcf7e042f3424d7489875af125543c967a706b7
