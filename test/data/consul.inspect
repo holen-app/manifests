@@ -1,0 +1,4 @@
+Binary Strategy (version: 0.7.1):
+  final url: https://releases.hashicorp.com/consul/0.7.1/consul_0.7.1_linux_amd64.zip
+  final unpack path: consul
+  checksum with sha256: 5dbfc555352bded8a39c7a8bf28b5d7cf47dec493bc0496e21603c84dfe41b4b

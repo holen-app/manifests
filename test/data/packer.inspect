@@ -1,0 +1,4 @@
+Binary Strategy (version: 0.12.0):
+  final url: https://releases.hashicorp.com/packer/0.12.0/packer_0.12.0_linux_amd64.zip
+  final unpack path: packer
+  checksum with sha256: ce6362d527ba697e40b8c90a98d2034b7749e2357fa238b08536aed44f037073

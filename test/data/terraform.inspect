@@ -1,0 +1,4 @@
+Binary Strategy (version: 0.7.11):
+  final url: https://releases.hashicorp.com/terraform/0.7.11/terraform_0.7.11_linux_amd64.zip
+  final unpack path: terraform
+  checksum with sha256: 1a1aa419d614ea38d93cc751e00874ace9414184c75e66480384c464e8a634db

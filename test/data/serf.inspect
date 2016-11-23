@@ -1,0 +1,4 @@
+Binary Strategy (version: 0.8.0):
+  final url: https://releases.hashicorp.com/serf/0.8.0/serf_0.8.0_linux_amd64.zip
+  final unpack path: serf
+  checksum with sha256: 67620e000fea28c3755e21d475a97fd65ad397df02c60c0e801ae2d521587b77
