@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: Distributed bug tracking with the filesystem and hg or git
+strategies:
+    binary:
+        base_url: https://github.com/driusan/bug/releases/download/{{.Version}}/bug-{{.Version}}.{{.OSArchData.arch}}.tar.gz
+        unpack_path: bug
+        os_arch:
+            linux_amd64:
+                arch: linux.amd64
+            darwin_amd64:
+                arch: osx.amd64
+        versions:
+          - version: 'v0.4'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 7f66ae180492f80a3ebcc8c1175ac1d878e194b8f2b86dc68db1324420bf1d2a
+                darwin_amd64:
+                    sha256sum: 1a2eada7990aeae46614ec9423574296a7b427b7ba575ad3733f52d11f78ca9c
