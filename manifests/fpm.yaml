@@ -1,0 +1,12 @@
+#!/usr/bin/env holen
+---
+desc: Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity.
+strategies:
+    docker:
+        image: casualjim/fpm:{{.Version}}
+        mount_pwd_as: /data
+        pwd_workdir: true
+        run_as_user: true
+        versions:
+          - version: 'latest'
+...
