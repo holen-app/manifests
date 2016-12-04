@@ -1,0 +1,10 @@
+#!/usr/bin/env holen
+---
+desc: Easily create an OpenVPN network with Docker
+strategies:
+    docker:
+        image: mediatemple/easy-docker-vpn:{{.Version}}
+        bootstrap_script: /wrapper
+        versions:
+          - version: 'latest'
+...
