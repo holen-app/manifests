@@ -1,0 +1,20 @@
+#!/usr/bin/env holen
+---
+desc: Terminal session recorder
+strategies:
+    binary:
+        base_url: https://github.com/asciinema/asciinema/releases/download/v{{.Version}}/asciinema-{{.Version}}-{{.OSArchData.arch}}.tar.gz
+        unpack_path: asciinema-{{.Version}}-{{.OSArchData.arch}}/asciinema
+        os_arch:
+            linux_amd64:
+                arch: linux-amd64
+            darwin_amd64:
+                arch: darwin-amd64
+        versions:
+          - version: '1.2.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: feb911ee32f32622efe941ae43a2fcccf2607fcb17c007b3adf19b2659688a3d
+                darwin_amd64:
+                    sha256sum: a263cbe0f6d9a98167d3743b8c77f1be088e18ca19c9edd063af4df89a19ca6c
+...
