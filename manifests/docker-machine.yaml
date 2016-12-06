@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: Machine management for a container-centric world
+strategies:
+    binary:
+        base_url: https://github.com/docker/machine/releases/download/v{{.Version}}/docker-machine-{{.OSArchData.ext}}
+        os_arch:
+            linux_amd64:
+                ext: Linux-x86_64
+            darwin_amd64:
+                ext: Darwin-x86_64
+        versions:
+          - version: '0.8.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: e5c3e360b46a82d4bc5ff2efe357b15040cfc58d3d962f793fee6ee1e44e9b66
+                darwin_amd64:
+                    sha256sum: e092467a87e3ce744a12aec25b04f58270e2f9f5364fdd858206611eeef45d57
+...
