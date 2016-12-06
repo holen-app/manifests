@@ -2,23 +2,20 @@
 ---
 desc: A tool for defining and running multi-container Docker applications.
 strategies:
-    docker:
-        image: docker/compose:{{.Version}}
-        docker_conn: true
-        mount_pwd: true
-        versions:
-          - version: '1.8.0'
-          - version: '1.7.1'
     binary:
         base_url: https://github.com/docker/compose/releases/download/{{.Version}}/docker-compose-{{.OSArchData.ext}}
         os_arch:
-            windows_amd64:
-                ext: Windows-x86_64.exe
             linux_amd64:
                 ext: Linux-x86_64
             darwin_amd64:
                 ext: Darwin-x86_64
         versions:
+          - version: '1.9.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: eeca988428d29534fecdff2768fa2e8c293b812b1c77da8ab5daf7f441c92e5b
+                darwin_amd64:
+                    sha256sum: ce56a5c6702e97e09bf92253a1ffd2ff2afb1f4a9c9ce778ea9a54bf1fdab517
           - version: '1.8.0'
           - version: '1.7.1'
 ...
