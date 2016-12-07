@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Simplistic interactive filtering tool
+strategies:
+    binary:
+        base_url: https://github.com/tsenart/vegeta/releases/download/v{{.Version}}/vegeta-v{{.Version}}-{{.OS}}-{{.Arch}}.tar.gz
+        unpack_path: vegeta
+        versions:
+          - version: '6.1.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 2f0a69d0ae6f0bf268b7f655bd37c0104d5568d5b2bc45bbb2c405266f74e33d
+                darwin_amd64:
+                    sha256sum: 2a9fa4a29fb2c55c5626db376fe692cf06fe5713a1523e43e1c5034814dfd5c5
