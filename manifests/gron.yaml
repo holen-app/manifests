@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Make JSON greppable!
+strategies:
+    binary:
+        base_url: https://github.com/tomnomnom/gron/releases/download/v{{.Version}}/gron-{{.OS}}-{{.Arch}}-{{.Version}}.tgz
+        unpack_path: gron
+        versions:
+          - version: '0.3.7'
+            os_arch:
+                linux_amd64:
+                    sha256sum: c0449d6f6ac199dbbf46a82bf0b65bf0a3541b7d99a7a434a9d38e28db9ea5a1
+                darwin_amd64:
+                    sha256sum: 5cab4c25461ea5071c72e535e294b7e667d4194b27607ea73ec3e12222fffa69
