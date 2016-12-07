@@ -3,15 +3,15 @@
 desc: Simple Docker development containers.
 strategies:
     binary:
-        base_url: https://github.com/skegio/skeg/releases/download/{{.Version}}/skeg_{{.OSArch}}
+        base_url: https://github.com/skegio/skeg/releases/download/v{{.Version}}/skeg_{{.OSArch}}
         versions:
-          - version: 'v0.2.2'
+          - version: '0.2.2'
             os_arch:
                 linux_amd64:
                     sha256sum: 067d0d9583f75c81c9b11fdd939568892e507ebb5d3826c250ec071b2c18c06a
                 darwin_amd64:
                     sha256sum: f65c0b045809fb4048c5b142f7511a8faa339026409929f70d2b6a92ba99c00e
-          - version: 'v0.2.1'
+          - version: '0.2.1'
             os_arch:
                 linux_amd64:
                     sha256sum: a8cda3f221ddaafa5cb0278d962c95d443acab79ea909640a8299b6f1167def4
