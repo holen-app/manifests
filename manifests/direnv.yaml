@@ -1,0 +1,13 @@
+#!/usr/bin/env holen
+---
+desc: Unclutter your .profile
+strategies:
+    binary:
+        base_url: https://github.com/direnv/direnv/releases/download/v{{.Version}}/direnv.{{.OS}}-{{.Arch}}
+        versions:
+          - version: '2.9.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: fc84c287090db88ccfd9ef58e39d7bfb332be72ab39a456cfe8ce02682c4024f
+                darwin_amd64:
+                    sha256sum: 8fbccf50cd8bf502361fb66922c8c1af9f17be5c867bab1a2a5338b44fd267f1
