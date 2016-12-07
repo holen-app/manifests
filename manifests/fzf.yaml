@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Simplistic interactive filtering tool
+strategies:
+    binary:
+        base_url: https://github.com/junegunn/fzf-bin/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.tgz
+        unpack_path: fzf-{{.Version}}-{{.OSArch}}
+        versions:
+          - version: '0.15.9'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 248799936c537a4d251ed73b859273416e5abc4bdcaea60ca73b78c75f6af7ac
+                darwin_amd64:
+                    sha256sum: 1cfba8d822e91126390f92662a5d560b59ff8830eade991cea9c6947a0be146f
