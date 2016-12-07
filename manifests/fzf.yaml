@@ -1,6 +1,6 @@
 #!/usr/bin/env holen
 ---
-desc: Simplistic interactive filtering tool
+desc: 🌸  A command-line fuzzy finder written in Go
 strategies:
     binary:
         base_url: https://github.com/junegunn/fzf-bin/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.tgz
