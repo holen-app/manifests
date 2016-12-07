@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: json incremental digger
+strategies:
+    binary:
+        base_url: https://github.com/simeji/jid/releases/download/{{.Version}}/jid_{{.OS}}_{{.Arch}}.zip
+        unpack_path: jid_{{.OSArch}}
+        versions:
+          - version: '0.6.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: fe3df68d310ee36ec9c5416e71141206f9df25e4d65f0a86f4300cd822cf1ae9
+                darwin_amd64:
+                    sha256sum: 3f0f3c468526ca675bb08f7129619ba0c95f3bd710f9d6d1f0aff833fee28336
