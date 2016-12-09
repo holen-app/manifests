@@ -3,13 +3,8 @@
 desc: hub helps you win at git
 strategies:
     binary:
-        base_url: https://github.com/github/hub/releases/download/v{{.Version}}/hub-{{.OS}}-{{.Arch}}-{{.Version}}.{{.OSArchData.ext}}
+        base_url: https://github.com/github/hub/releases/download/v{{.Version}}/hub-{{.OS}}-{{.Arch}}-{{.Version}}.tgz
         unpack_path: hub-{{.OS}}-{{.Arch}}-{{.Version}}/bin/hub
-        os_arch:
-            linux_amd64:
-                ext: tgz
-            darwin_amd64:
-                ext: zip
         versions:
           - version: '2.2.9'
             os_arch:
