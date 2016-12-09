@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: hub helps you win at git
+strategies:
+    binary:
+        base_url: https://github.com/github/hub/releases/download/v{{.Version}}/hub-{{.OS}}-{{.Arch}}-{{.Version}}.{{.OSArchData.ext}}
+        unpack_path: hub-{{.OS}}-{{.Arch}}-{{.Version}}/bin/hub
+        os_arch:
+            linux_amd64:
+                ext: tgz
+            darwin_amd64:
+                ext: zip
+        versions:
+          - version: '2.2.9'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 5867647071007add582f911867fb4973354c51690ac20aecb2e73be7440875a3
+                darwin_amd64:
+                    sha256sum: 3b3dbb72ab2fbd777c977ea4b5f94e891c297a05156e420f2002b7becacda79a
