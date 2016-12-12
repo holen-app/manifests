@@ -6,11 +6,28 @@ strategies:
         image: nate/dockviz:v{{.Version}}
         docker_conn: true
         versions:
+          - version: '0.5.0'
           - version: '0.4.2'
           - version: '0.4.1'
     binary:
         base_url: https://github.com/justone/dockviz/releases/download/v{{.Version}}/dockviz_{{.OSArch}}
         versions:
+          - version: '0.5.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 0d63259921dae52329f61d63e7fef8211362d6b62396d2db5759e46054995a98
+                darwin_amd64:
+                    sha256sum: 3e1f72cf94ad228bd84d8d288531e28f7935346233c409c7c0cd9b88deebdc81
           - version: '0.4.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: a8155fd4b2ebd38444c57a0e7af2892a246abec89c9f13b7421721df931b7c3b
+                darwin_amd64:
+                    sha256sum: 24b56b817101bc8089be3a46501ae0e5fa0a3a52fa90d640de115295427d49cf
           - version: '0.4.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 8ccdf7727a044e485cb9000bc31aa2ef64f71cfbd624d13416a91d5359209871
+                darwin_amd64:
+                    sha256sum: e2a6dd062150f06dd4a20c3a3befa6a780bbfcb4c09403d93bd4e59576fd07d5
 ...
