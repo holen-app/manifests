@@ -1,0 +1,22 @@
+#!/usr/bin/env holen
+---
+desc: The open-source application container engine (client only)
+strategies:
+    binary:
+        base_url: https://get.docker.com/builds/{{.OSArchData.ucos}}/{{.OSArchData.arch}}/docker-{{.Version}}.tgz
+        unpack_path: docker/docker
+        os_arch:
+            linux_amd64:
+                ucos: Linux
+                arch: x86_64
+            darwin_amd64:
+                ucos: Darwin
+                arch: x86_64
+        versions:
+          - version: '1.12.4'
+            os_arch:
+                linux_amd64:
+                    sha256sum: f7cb7bb55d6ceba3ba3d24d62027e84799763b4c41b0bda5d8d5b9ba31ed0f2f
+                darwin_amd64:
+                    sha256sum: 59c9b96eefe6ebd22c86a9af14ca57f74b605ccca9c856754aa91ffcf657dff2
+...
