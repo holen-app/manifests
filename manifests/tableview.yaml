@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Format CSV file as human readable table
+strategies:
+    binary:
+        base_url: https://github.com/informationsea/tableview/releases/download/v{{.Version}}/tableview_{{.OSArch}}
+        versions:
+          - version: '0.4.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 2efd0144053bad5ab2c78ee630194d7a0fce97cf701c39b6ee073ea96ee7a75d
+                darwin_amd64:
+                    sha256sum: 88c67098469fb06a87a328cc83904faa9fcf265334a57d57ce1a6cd41570ccfe
+...
