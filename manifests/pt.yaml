@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A code search tool similar to ack and the_silver_searcher(ag).
+strategies:
+    binary:
+        base_url: https://github.com/monochromegane/the_platinum_searcher/releases/download/v{{.Version}}/pt_{{.OSArch}}.{{.OSArchData.ext}}
+        unpack_path: pt_{{.OSArch}}/pt
+        os_arch:
+            linux_amd64:
+                ext: tar.gz
+            darwin_amd64:
+                ext: zip
+        versions:
+          - version: '2.1.4'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 6e2669c24dbd9b51100cea5a065865dbf87451cc7aad472a9b14aa2719ee1bff
+                darwin_amd64:
+                    sha256sum: 3ecd5f88efa058ecab28f3ebc7aa9ff0e8a7cabee1f2dd8e0b2775d9f7269cdb
