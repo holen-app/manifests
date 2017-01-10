@@ -1,0 +1,12 @@
+#!/usr/bin/env holen
+---
+desc: is a file archiver with a high compression ratio
+strategies:
+    docker:
+        image: thoom/7zip:{{.Version}}
+        pwd_workdir: true
+        mount_pwd: true
+        run_as_user: true
+        versions:
+          - version: 'latest'
+...
