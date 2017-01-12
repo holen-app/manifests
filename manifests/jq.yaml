@@ -2,6 +2,10 @@
 ---
 desc: Lightweight and flexible command-line JSON processor
 strategies:
+    cmdio:
+        command: justone/jq--{{.Version}}
+        versions:
+          - version: '1.5'
     docker:
         image: jemmyw/jq:{{.Version}}
         versions:
