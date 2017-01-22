@@ -5,5 +5,7 @@ strategies:
     binary:
         base_url: http://get.pmb.io/{{.Version}}/pmb_{{.OSArch}}
         versions:
+          - version: '2017-01-22-0801-4abebbd'
+          - version: '2017-01-18-2024-1ba4b7f'
           - version: '2016-07-20-1402-0293073'
 ...
