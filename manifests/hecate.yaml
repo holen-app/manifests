@@ -1,18 +1,20 @@
 #!/usr/bin/env holen
 ---
-desc: A code search tool similar to ack and the_silver_searcher(ag).
+desc: The Hex Editor From Hell!
 strategies:
     binary:
         base_url: https://github.com/evanmiller/hecate/releases/download/v{{.Version}}/hecate_{{.Version}}_{{.OSArch}}.{{.OSArchData.ext}}
-        unpack_path: hecate_{{.Version}}_{{.OSArch}}/hecate
+        unpack_path: "{{.OSArchData.unpack_path}}"
         os_arch:
             linux_amd64:
                 ext: tar.gz
+                unpack_path: hecate_{{.Version}}_{{.OSArch}}/hecate
             darwin_amd64:
                 ext: zip
+                unpack_path: hecate_{{.Version}}_{{.OSArch}}/hecate
             windows_amd64:
-                unpack_path: hecate.exe
                 ext: zip
+                unpack_path: hecate.exe
         versions:
           - version: '0.0.1'
             os_arch:
