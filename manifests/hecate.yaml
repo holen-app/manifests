@@ -1,0 +1,24 @@
+#!/usr/bin/env holen
+---
+desc: A code search tool similar to ack and the_silver_searcher(ag).
+strategies:
+    binary:
+        base_url: https://github.com/evanmiller/hecate/releases/download/v{{.Version}}/hecate_{{.Version}}_{{.OSArch}}.{{.OSArchData.ext}}
+        unpack_path: hecate_{{.Version}}_{{.OSArch}}/hecate
+        os_arch:
+            linux_amd64:
+                ext: tar.gz
+            darwin_amd64:
+                ext: zip
+            windows_amd64:
+                unpack_path: hecate.exe
+                ext: zip
+        versions:
+          - version: '0.0.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 9cdd5b95559cf0ccf2878a04a3d5c40247fd5820e16273fe4bad48edd61e4944
+                darwin_amd64:
+                    sha256sum: 4334866db269a0a4c3567d69ff263b689ab0a32c0d0454a1786b895bcef16445
+                windows_amd64:
+                    sha256sum: 7a2aad213a8c5c64ffec2e1fcdedf4f170354772b82edaee90c0e01cff393969
