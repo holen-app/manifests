@@ -1,0 +1,22 @@
+#!/usr/bin/env holen
+---
+desc: A vault for securely storing and accessing AWS credentials in development environments
+strategies:
+    binary:
+        base_url: https://github.com/99designs/aws-vault/releases/download/v{{.Version}}/aws-vault-{{.OSArchData.suffix}}
+        os_arch:
+            linux_amd64:
+                suffix: linux-amd64
+            darwin_amd64:
+                suffix: darwin-amd64
+            windows_amd64:
+                suffix: windows-386
+        versions:
+          - version: '3.7.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 0ff59eb412eff4beebd71f3431bd325d1d07190fe0e22f9ca433502efb17f4c4
+                darwin_amd64:
+                    sha256sum: d17dfd93591efeaaceaca8d2eba8371f2ecc1543c4dc5d4441333c557330b04a
+                windows_amd64:
+                    sha256sum: 1f9ec49cc9ebbd415d41d5f2e252fe70a1d12d072e1abf065c3be3322b0d255d

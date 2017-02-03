@@ -1,0 +1,20 @@
+#!/usr/bin/env holen
+---
+desc: Secure environment variables via NaCl secretbox
+strategies:
+    binary:
+        base_url: https://github.com/justone/envbox/releases/download/v{{.Version}}/envbox_{{.OSArch}}{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '0.0.1'
+            os_arch:
+                linux_arm:
+                    sha256sum: e040e1b8ef562f359f96de4363feee8795f30fde247fde108247bccbbfa24f72
+                linux_amd64:
+                    sha256sum: 4bad0d30760eb8441d105518af28bb467c3703e7553fd3febbb6855fb23a2604
+                darwin_amd64:
+                    sha256sum: 4a5a8f00934a2bf8eb1f7be8bd3a0fb8a3b5f89d9bb3c39ff99bfd2d0b046039
+                windows_amd64:
+                    sha256sum: 0ab3097e241a5bef60b369bdb4930f56c8721833dac4085c9d3cf25f139c9ce2
