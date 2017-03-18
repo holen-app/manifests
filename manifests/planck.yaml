@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Stand-alone ClojureScript REPL
+strategies:
+    docker:
+        image: nate/planck:{{.Version}}
+        mount_pwd: true
+        pwd_workdir: true
+        run_as_user: true
+        terminal: always
+        interactive: true
+        versions:
+          - version: '2.2.0'
+          - version: '2.1.0'
