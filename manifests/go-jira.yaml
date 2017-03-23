@@ -1,0 +1,22 @@
+#!/usr/bin/env holen
+---
+desc: simple jira command line client in Go
+strategies:
+    binary:
+        base_url: https://github.com/Netflix-Skunkworks/go-jira/releases/download/v{{.Version}}/jira-{{.OSArchData.arch}}
+        os_arch:
+            linux_amd64:
+                arch: linux-amd64
+            darwin_amd64:
+                arch: darwin-10.6-amd64
+            windows_amd64:
+                arch: windows-4.0-amd64.exe
+        versions:
+          - version: '0.1.12'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 21b34d8a9fcff46f014817fe36e2c123d3733a9c52712b89d85e60a1c20a8a6b
+                darwin_amd64:
+                    sha256sum: d42d5978a09a9927b39e52c412b4b1599d4284f63033d2648877f4ebc52d663c
+                windows_amd64:
+                    sha256sum: fc63d45cb7fbe5d2e0db646a1fc3579c98efd00e5faf3e3845561cd81bbfeb40
