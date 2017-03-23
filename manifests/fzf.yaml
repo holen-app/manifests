@@ -6,6 +6,13 @@ strategies:
         base_url: https://github.com/junegunn/fzf-bin/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.tgz
         unpack_path: fzf-{{.Version}}-{{.OSArch}}
         versions:
+          - version: '0.16.6'
+            unpack_path: fzf
+            os_arch:
+                linux_amd64:
+                    sha256sum: ead4486b879fb91ae2c6e88ad4ad1bad5ed1e31fe02bc56489e289513f3a0f8f
+                darwin_amd64:
+                    sha256sum: f87da1a982719e8ba77d9cb16fc66fe941a67af6436b80d543d2894e218f9998
           - version: '0.15.9'
             os_arch:
                 linux_amd64:
