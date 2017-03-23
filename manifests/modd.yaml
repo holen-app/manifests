@@ -1,0 +1,33 @@
+#!/usr/bin/env holen
+---
+desc: A flexible tool for responding to filesystem changes
+strategies:
+    binary:
+        base_url: https://github.com/junegunn/fzf-bin/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.tgz
+        base_url: https://github.com/cortesi/modd/releases/download/v{{.Version}}/modd-{{.Version}}-{{.OSArchData.osarch}}{{.OSArchData.ext}}
+        unpack_path: modd-{{.Version}}-{{.OSArchData.osarch}}/modd{{.OSArchData.fileext}}
+        os_arch:
+            linux_arm:
+                osarch: linuxARM
+                ext: .tgz
+            linux_amd64:
+                osarch: linux64
+                ext: .tgz
+            darwin_amd64:
+                osarch: osx64
+                ext: .tgz
+            windows_amd64:
+                osarch: windows64
+                ext: .zip
+                fileext: .exe
+        versions:
+          - version: '0.4'
+            os_arch:
+                linux_arm:
+                    sha256sum: 4e8169c3e2c6c110826661b7774cf763e0216112e39d3c3d1a61160e0afad106
+                linux_amd64:
+                    sha256sum: 90d014af3ab3cd2a80bb83f6a35e07f86aa261a46842bd1aa59cfba93c8cd9a0
+                darwin_amd64:
+                    sha256sum: 6bc460f55a0838ae71bcd47d70c656cdaa6fd2641c232ff0e228aa6bbb4a0c62
+                windows_amd64:
+                    sha256sum: 9d2f314a2fe8cfbc64a6e3657575e9de7d0410ff4cd12522b72663605ea2b03f
