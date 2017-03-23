@@ -1,0 +1,15 @@
+#!/usr/bin/env holen
+---
+desc: Top-like interface for container metrics
+strategies:
+    binary:
+        base_url: https://github.com/bcicen/ctop/releases/download/v{{.Version}}/ctop-{{.Version}}-{{.OS}}-{{.Arch}}
+        versions:
+          - version: '0.5.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 2b49a5e5343f027ddd4dc64be938e6ae668ac14e1117e8541c29308442f4a381
+                darwin_amd64:
+                    sha256sum: 48b8939da90c0574f97d78aa9f79820057b024d5554aeae2702a3ce3c045ad2e
+                linux_arm:
+                    sha256sum: 90e8288e82e3abe4a3a5506ced8a75df6dc3962e28a95a5e5a3f6d6675f35c9d
