@@ -3,7 +3,6 @@
 desc: A flexible tool for responding to filesystem changes
 strategies:
     binary:
-        base_url: https://github.com/junegunn/fzf-bin/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.tgz
         base_url: https://github.com/cortesi/modd/releases/download/v{{.Version}}/modd-{{.Version}}-{{.OSArchData.osarch}}{{.OSArchData.ext}}
         unpack_path: modd-{{.Version}}-{{.OSArchData.osarch}}/modd{{.OSArchData.fileext}}
         os_arch:
