@@ -1,6 +1,6 @@
 #!/usr/bin/env holen
 ---
-desc: Simplistic interactive filtering tool
+desc: HTTP load testing tool and library. It's over 9000!
 strategies:
     binary:
         base_url: https://github.com/tsenart/vegeta/releases/download/v{{.Version}}/vegeta-v{{.Version}}-{{.OS}}-{{.Arch}}.tar.gz
