@@ -1,0 +1,24 @@
+#!/usr/bin/env holen
+---
+desc: Commandline app to create and edit releases on Github (and upload artifacts)
+strategies:
+    binary:
+        base_url: https://github.com/aktau/github-release/releases/download/v{{.Version}}/{{.OS}}-{{.Arch}}-github-release{{.OSArchData.ext}}
+        unpack_path: bin/{{.OS}}/{{.Arch}}/github-release{{.OSArchData.fileext}}
+        os_arch:
+            linux_amd64:
+                ext: .tar.bz2
+            darwin_amd64:
+                ext: .tar.bz2
+            windows_amd64:
+                ext: .zip
+                fileext: .exe
+        versions:
+          - version: '0.7.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 3feae868828f57a24d1bb21a5f475de4a116df3063747e3290ad561b4292185c
+                darwin_amd64:
+                    sha256sum: 92d7472d6c872aa5f614c5141e84ee0a67fbdae87c0193dcf0a0476d9f1bc250
+                windows_amd64:
+                    sha256sum: 7f986241fbde12c6dc85c5b9888f11815e22338c73741266fdee76588e8c197f
