@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: Simple command-line snippet manager, written in Go.
+strategies:
+    binary:
+        base_url: https://github.com/knqyf263/pet/releases/download/v{{.Version}}/pet_{{.Version}}_{{.OSArch}}.zip
+        unpack_path: pet{{.OSArchData.fileext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '0.2.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: e5615c9be85e5f0a03d4bcb9da93aa7e74f92ef1f4d4144c5b466d08f566e51c
+                darwin_amd64:
+                    sha256sum: 2b4b2c91fe76f395935ff16f22f9a0787c61f35cb869b343ceff5f41d568c63c
+                windows_amd64:
+                    sha256sum: ee7837dff00da7baaabaf2cda1c5d98be88d60b4939f7dcdc923f2d87e8d36a4
