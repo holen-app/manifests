@@ -6,6 +6,18 @@ strategies:
         base_url: https://github.com/tsenart/vegeta/releases/download/v{{.Version}}/vegeta-v{{.Version}}-{{.OS}}-{{.Arch}}.tar.gz
         unpack_path: vegeta
         versions:
+          - version: '6.3.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 83fe42ee9847e28ec9ef39bc8e3cbadd0d5209a7d0272335f77ce553f8c37e79
+                darwin_amd64:
+                    sha256sum: dbdf3264beb0b9f6478800fd0827f3c1b2a22c1051501148147a40cede608b67
+          - version: '6.2.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: e135d32292584d4a26598abbdb403bae6f94e54c350e8fe5fc1eb1d8222470a5
+                darwin_amd64:
+                    sha256sum: d632b589630c9889d3981bab5ed63ea76ae918683c9c12dccfed476210e99938
           - version: '6.1.1'
             os_arch:
                 linux_amd64:
