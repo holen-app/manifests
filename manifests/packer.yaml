@@ -6,6 +6,12 @@ strategies:
         base_url: https://releases.hashicorp.com/packer/{{.Version}}/packer_{{.Version}}_{{.OSArch}}.zip
         unpack_path: packer
         versions:
+          - version: '1.0.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: ed697ace39f8bb7bf6ccd78e21b2075f53c0f23cdfb5276c380a053a7b906853
+                darwin_amd64:
+                    sha256sum: 274f2e45db0e6f6f6673a1c1481afc8c6f402217d984af0ca2956c3488f1ead1
           - version: '0.12.0'
             os_arch:
                 linux_amd64:
