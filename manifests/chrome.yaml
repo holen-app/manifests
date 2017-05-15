@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Headless version of the Chrome browser
+strategies:
+    docker:
+        image: justinribeiro/chrome-headless:{{.Version}}
+        mount_pwd: true
+        pwd_workdir: true
+        interactive: true
+        terminal: always
+        run_as_user: true
+        versions:
+          - version: 'latest'
+...
