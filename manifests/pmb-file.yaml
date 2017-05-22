@@ -1,0 +1,20 @@
+#!/usr/bin/env holen
+---
+desc: Fling files around with the help of the Personal Message Bus
+strategies:
+    binary:
+        base_url: https://github.com/justone/pmb-file/releases/download/v{{.Version}}/pmb-file_{{.OSArch}}{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '0.0.1'
+            os_arch:
+                linux_arm:
+                    sha256sum: 862dde1f629da32a432672e09641469ab0b7cbf96c6690d9e50a6b7caac00191
+                linux_amd64:
+                    sha256sum: a5dd4011c20edb71f1136275b6042d1395b447461c894dcf99c57641ef84a459
+                darwin_amd64:
+                    sha256sum: 38366cc4e1b1b56f6694b36f2a01a5015c1ee15514511fe911d8110a255fe3f8
+                windows_amd64:
+                    sha256sum: 5ecce2fd0799a0898f48851358cf70adb28bcdcace419ee1bedaf80ef3ee1727
