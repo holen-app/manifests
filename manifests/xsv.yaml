@@ -1,0 +1,24 @@
+#!/usr/bin/env holen
+---
+desc: A fast CSV toolkit written in Rust.
+strategies:
+    binary:
+        base_url: https://github.com/BurntSushi/xsv/releases/download/{{.Version}}/xsv-{{.Version}}-i686-{{.OSArchData.archext}}
+        unpack_path: xsv{{.OSArchData.ext}}
+        os_arch:
+            linux_amd64:
+                archext: unknown-linux-musl.tar.gz
+            darwin_amd64:
+                archext: apple-darwin.tar.gz
+            windows_amd64:
+                archext: pc-windows-msvc.zip
+                ext: .exe
+        versions:
+          - version: '0.11.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 71231e38197ff27db01c3fdaf56a94f25339c7ffbed7f0162c51488f714fae35
+                darwin_amd64:
+                    sha256sum: 57378126357c3fc81da3cb7f568379b0b0f2accdf9d5f878f339bb1649c74b3e
+                windows_amd64:
+                    sha256sum: fe14d942211cb052b43c32d6279b18f7c994825654278ec6fa5a2f43cd23d81e
