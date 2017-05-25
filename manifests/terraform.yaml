@@ -7,28 +7,30 @@ strategies:
         pwd_workdir: true
         mount_pwd: true
         versions:
-          - version: '0.8.1'
-          - version: '0.8.0'
-          - version: '0.7.11'
+          - version: '0.9.6'
+          - version: '0.9.5'
+          - version: '0.9.4'
+          - version: '0.8.8'
+          - version: '0.7.13'
     binary:
         base_url: https://releases.hashicorp.com/terraform/{{.Version}}/terraform_{{.Version}}_{{.OSArch}}.zip
         unpack_path: terraform
         versions:
-          - version: '0.8.1'
+          - version: '0.9.6'
             os_arch:
                 linux_amd64:
-                    sha256sum: da98894a79b7e97ddcb2a1fed7700d3f53c3660f294fb709e1d52c9baaee5c59
+                    sha256sum: 7ec24a5d57da6ef7bdb5a3003791a4368489b32fa93be800655ccef0eceaf1ba
                 darwin_amd64:
-                    sha256sum: 275104513600bf50a28942131d928d2be405c75f9f36a9c722718500075856a1
-          - version: '0.8.0'
+                    sha256sum: 71f53879c2fc33af57238cdb67a344d576ae3ae88f8db112122d433bd762788d
+          - version: '0.8.8'
             os_arch:
                 linux_amd64:
-                    sha256sum: 9f99258396dad71746fb96036bf421e05fb3f36f402b89c3f16b453f3f0ee9cf
+                    sha256sum: 403d65b8a728b8dffcdd829262b57949bce9748b91f2e82dfd6d61692236b376
                 darwin_amd64:
-                    sha256sum: 4f4410be73200f95f84e359409481c8c48bc70e659fc5f7ea3f33a1db574ff65
-          - version: '0.7.11'
+                    sha256sum: 55ab547539e68c9375c144062460457fcfdb3f5b9f412d3bb162f73298602d78
+          - version: '0.7.13'
             os_arch:
                 linux_amd64:
-                    sha256sum: 1a1aa419d614ea38d93cc751e00874ace9414184c75e66480384c464e8a634db
+                    sha256sum: 5a4f762a194542d38406b9b92c722b57f7910344db084e24c9c43d7719f4aa18
                 darwin_amd64:
-                    sha256sum: 69c8d2b07f04e9bf0beb4a333dd189d8616d22fe46692bdb5aef10493ac5e5c6
+                    sha256sum: c1e004ad2bff4e92edb13cf32a18b67b5178fc3597a844beeda09cc4f9c30b65
