@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A Mighty CLI for AWS
+strategies:
+    binary:
+        base_url: https://github.com/wallix/awless/releases/download/v{{.Version}}/awless-{{.OS}}-{{.Arch}}.zip
+        unpack_path: awless{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '0.1.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 6f664db07f50f659fb991f38e1bd41196f97d01f5855a3f38e72a1e8581d33b9
+                darwin_amd64:
+                    sha256sum: 2e8bd15f29f34c1e5fc820463d03597a73dc1ea5decb296053e1f32de849d348
+                windows_amd64:
+                    sha256sum: d899fa94bbe1c86dca9f4477e666a8fd80b21a642acec7d17c1393414f1344c3
