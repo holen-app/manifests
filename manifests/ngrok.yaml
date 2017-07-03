@@ -1,0 +1,21 @@
+#!/usr/bin/env holen
+---
+desc: Introspected tunnels to localhost
+strategies:
+    binary:
+        unpack_path: ngrok{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '1.7.1'
+            base_url: https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-{{.OS}}-{{.Arch}}.zip
+            os_arch:
+                linux_arm:
+                    sha256sum: 3b60feb13bf538503de1eb358f08b33d288b1bb97f65f4fe1704dbbb68fb28dc
+                linux_amd64:
+                    sha256sum: e718fae33fa21f6ac9689a617b9fa19147b6fa1e4f5779353fbb77ccef6bc78c
+                darwin_amd64:
+                    sha256sum: 9c170076a1f4f08a09532ce6cf9791c4c4f946886cdbf2a8917b569a9d5457f6
+                windows_amd64:
+                    sha256sum: 81b1a591837b1dbb9b2001b761e89a76ee121e09b630c7844d8f7e52bf6f1242
