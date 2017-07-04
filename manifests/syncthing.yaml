@@ -1,0 +1,32 @@
+#!/usr/bin/env holen
+---
+desc: Open Source Continuous File Synchronization
+strategies:
+    binary:
+        base_url: https://github.com/syncthing/syncthing/releases/download/v{{.Version}}/syncthing-{{.OSArchData.os}}-{{.Arch}}-v{{.Version}}{{.OSArchData.ext}}
+        unpack_path: syncthing-{{.OSArchData.os}}-{{.Arch}}-v{{.Version}}/syncthing{{.OSArchData.fileext}}
+        os_arch:
+            linux_amd64:
+                os: linux
+                ext: .tar.gz
+            darwin_amd64:
+                os: macosx
+                ext: .tar.gz
+            linux_arm:
+                os: linux
+                ext: .tar.gz
+            windows_amd64:
+                os: windows
+                ext: .zip
+                fileext: .exe
+        versions:
+          - version: '0.14.31'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 2a6ab17c5d58f4de8e97492cb79712174319569910c0589d962e7f9d014a65c8
+                darwin_amd64:
+                    sha256sum: 50355d018ddb1f0c17ecf93f1601957e299708de038abd8cf05f5dc6b6a40cc5
+                linux_arm:
+                    sha256sum: 8320c69cbfc2d228a8197893f4ea21b141f4ea078cd7a6a68c4558a6ede89e7e
+                windows_amd64:
+                    sha256sum: 83337ec56b17c77ef7014ce00b73a198ae180b589d3a71d2f4b2408eca51cb4d
