@@ -1,0 +1,29 @@
+#!/usr/bin/env holen
+---
+desc: File watcher intended for use with Syncthing (Linux, BSD, Windows, OSX)
+strategies:
+    binary:
+        base_url: https://github.com/syncthing/syncthing-inotify/releases/download/v{{.Version}}/syncthing-inotify-{{.OS}}-{{.Arch}}-v{{.Version}}{{.OSArchData.ext}}
+        unpack_path: syncthing-inotify{{.OSArchData.fileext}}
+        os_arch:
+            linux_amd64:
+                ext: .tar.gz
+            darwin_amd64:
+                ext: .tar.gz
+            linux_arm:
+                ext: .tar.gz
+            windows_amd64:
+                ext: .zip
+                fileext: .exe
+        versions:
+          - version: '0.8.7'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 2d433132e6792780248494eea509cc9b34a9af127a1a8a3120be6e73bca3a406
+                darwin_amd64:
+                    sha256sum: 5d3824a0b299870e638b7eac2ae0884f6bcc273c40141c3f6e52445edce5b3d3
+                linux_arm:
+                    sha256sum: d37f36a2d3c6e7fb5c2d5043e61c93f4188f7aaceeb8397149e70c17fed8276a
+                windows_amd64:
+                    sha256sum: 138e107d577051e680512ce6b2f85c7b1c53dfee64833664689e7b380a1f5443
+
