@@ -1,0 +1,17 @@
+#!/usr/bin/env holen
+---
+desc: A Docker container manager for the terminal
+strategies:
+    binary:
+        base_url: https://github.com/moncho/dry/releases/download/v{{.Version}}/dry-{{.OS}}-{{.Arch}}
+        versions:
+          - version: '0.8-beta.4'
+            os_arch:
+                linux_amd64:
+                    sha256sum: f82f53c029f278b6e1ca64ea8f04b5a8886b74cf435c568cf256ab2fbd9525ba
+                darwin_amd64:
+                    sha256sum: aa1befc126ed9dd99af77beffe0b8441b4bac908c89f1882a85694f016ffb71c
+                linux_arm:
+                    sha256sum: 84badc9cf1b87971b634361d5ffb9400744e82d61735ec3e66a376ec7a083138
+                windows_amd64:
+                    sha256sum: 01e981d72b0581bd225cdcb95e576d057ac4a96ee64ed356e797f581510738ca
