@@ -1,0 +1,24 @@
+#!/usr/bin/env holen
+---
+desc: Compiler for Protocol Buffers - Google's data interchange format
+strategies:
+    binary:
+        base_url: https://github.com/google/protobuf/releases/download/v{{.Version}}/protoc-{{.Version}}-{{.OSArchData.osarch}}.zip
+        unpack_path: bin/protoc{{.OSArchData.fileext}}
+        os_arch:
+            linux_amd64:
+                osarch: linux-x86_64
+            darwin_amd64:
+                osarch: osx-x86_64
+            windows_amd64:
+                osarch: win32
+                fileext: .exe
+        versions:
+          - version: '3.4.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: e4b51de1b75813e62d6ecdde582efa798586e09b5beaebfb866ae7c9eaadace4
+                darwin_amd64:
+                    sha256sum: 8df109526ad6588f204fdeb7bc4843eb5f3246390c2f21b563473d43cb70e890
+                windows_amd64:
+                    sha256sum: 7d8a42ae38fec3ca09833ea16f1d83a049f0580929c3b057042e006105ad864b
