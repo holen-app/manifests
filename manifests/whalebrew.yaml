@@ -1,0 +1,18 @@
+#!/usr/bin/env holen
+---
+desc: Homebrew, but with Docker images
+strategies:
+    binary:
+        base_url: https://github.com/bfirsh/whalebrew/releases/download/{{.Version}}/whalebrew-{{.OSArchData.os}}-x86_64
+        os_arch:
+            linux_amd64:
+                os: Linux
+            darwin_amd64:
+                os: Darwin
+        versions:
+          - version: '0.1.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: f776cb3bc40fde0cd221e38159d2fa3a7933c4f8cf40a1dad257a09edb0e4af4
+                darwin_amd64:
+                    sha256sum: f7ac7999fc6e5c72ae7a65e1adaffc8db371fc7682b5c39a8f5f4f319f2625e8
