@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: Replacement for 'ls' written in Rust.
+strategies:
+    binary:
+        base_url: https://github.com/ogham/exa/releases/download/v{{.Version}}/exa-{{.OSArchData.osarch}}-{{.Version}}.zip
+        unpack_path: exa-{{.OSArchData.osarch}}
+        os_arch:
+            linux_amd64:
+                osarch: linux-x86_64
+            darwin_amd64:
+                osarch: macos-x86_64
+        versions:
+          - version: '0.8.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 7d49e8b9c176bf5f967ff08d82d6f7e879ef42f018cd824811e68ecbc46f06d5
+                darwin_amd64:
+                    sha256sum: e5db9b1b3142102f7f26dae5d11f745c794d45ba9c4004310df7eaed30909c41
