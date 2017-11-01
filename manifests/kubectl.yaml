@@ -1,0 +1,21 @@
+#!/usr/bin/env holen
+---
+desc: Command line interface for running commands against Kubernetes clusters
+strategies:
+    binary:
+        base_url: https://dl.k8s.io/v{{.Version}}/kubernetes-client-{{.OS}}-{{.Arch}}.tar.gz
+        unpack_path: kubernetes/client/bin/kubectl{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '1.8.2'
+            os_arch:
+                linux_arm:
+                    sha256sum: a1cff2f8ab5f77f000e20f87b00a3723a8323fec82926afcc984722ab3f8d714
+                linux_amd64:
+                    sha256sum: 7c20d4a3859c07aadf9a1676876bafdf56187478a69d3bfca5277fb275febb96
+                darwin_amd64:
+                    sha256sum: 15da279f018a73f93b857639931c4ba8a714c86e5c5738c33840c47df44ac2a4
+                windows_amd64:
+                    sha256sum: b8ff337615f740b1501cf7284d7f0a51a82880dcf23fff2464f8d37045c27f3f
