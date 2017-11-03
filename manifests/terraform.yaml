@@ -7,6 +7,7 @@ strategies:
         pwd_workdir: true
         mount_pwd: true
         versions:
+          - version: '0.10.8'
           - version: '0.9.6'
           - version: '0.9.5'
           - version: '0.9.4'
@@ -16,6 +17,12 @@ strategies:
         base_url: https://releases.hashicorp.com/terraform/{{.Version}}/terraform_{{.Version}}_{{.OSArch}}.zip
         unpack_path: terraform
         versions:
+          - version: '0.10.8'
+            os_arch:
+                linux_amd64:
+                    sha256sum: b786c0cf936e24145fad632efd0fe48c831558cc9e43c071fffd93f35e3150db
+                darwin_amd64:
+                    sha256sum: 3f05acdf0a9e04ba7e3bda18521feb0b310462dcce62c454854a40519b1695ed
           - version: '0.9.6'
             os_arch:
                 linux_amd64:
