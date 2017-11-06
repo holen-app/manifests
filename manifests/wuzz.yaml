@@ -1,0 +1,20 @@
+#!/usr/bin/env holen
+---
+desc: Interactive cli tool for HTTP inspection
+strategies:
+    binary:
+        base_url: https://github.com/asciimoo/wuzz/releases/download/v{{.Version}}/wuzz_{{.OSArch}}{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '0.4.0'
+            os_arch:
+                linux_arm:
+                    sha256sum: 0b66609df6bb3736e866ffaec1f9a50a24ee257b572ea2010d27d0e8b7576900
+                linux_amd64:
+                    sha256sum: 5a1443e07a5a9b9bb813804290e87fdd27b544f4fe00ef95fe3b64e7b56459ec
+                darwin_amd64:
+                    sha256sum: c8a4bc7eef2511093fd55a1e38b90aeabb4b0016b01875ec143ae19358342470
+                windows_amd64:
+                    sha256sum: d9b060a8ca5e7b6328e7d479bd2701ebb7cb32de0cfbcf2ee167b12a6f20536e
