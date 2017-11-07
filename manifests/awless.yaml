@@ -3,13 +3,27 @@
 desc: A Mighty CLI for AWS
 strategies:
     binary:
-        base_url: https://github.com/wallix/awless/releases/download/v{{.Version}}/awless-{{.OS}}-{{.Arch}}.zip
+        base_url: https://github.com/wallix/awless/releases/download/v{{.Version}}/awless-{{.OS}}-{{.Arch}}{{.OSArchData.compext}}
         unpack_path: awless{{.OSArchData.ext}}
         os_arch:
+            linux_amd64:
+                compext: .tar.gz
+            darwin_amd64:
+                compext: .tar.gz
             windows_amd64:
+                compext: .zip
                 ext: .exe
         versions:
+          - version: '0.1.5'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 85b8709cd152bb9fe53e7aa591fcde7bf64c38915cecd25b1fe1ed0f4c396683
+                darwin_amd64:
+                    sha256sum: d96e3c475ef6c4d7f60b0b91386b45ca25a61db1289b944662d0ca910040b243
+                windows_amd64:
+                    sha256sum: ef1742fb2991a0d7379a8a3fc1c53e11aa744b417bae1d96443941585441b33a
           - version: '0.1.0'
+            base_url: https://github.com/wallix/awless/releases/download/v{{.Version}}/awless-{{.OS}}-{{.Arch}}.zip
             os_arch:
                 linux_amd64:
                     sha256sum: 6f664db07f50f659fb991f38e1bd41196f97d01f5855a3f38e72a1e8581d33b9
