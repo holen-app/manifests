@@ -1,0 +1,31 @@
+#!/usr/bin/env holen
+---
+desc: 🌰 encrypt/decrypt using ssh keys
+strategies:
+    binary:
+        base_url: https://dl.bintray.com/nbari/ssh-vault/ssh-vault_{{.Version}}_{{.OS}}_{{.Arch}}{{.OSArchData.compext}}
+        unpack_path: "{{.OSArchData.path_prefix}}ssh-vault{{.OSArchData.ext}}"
+        os_arch:
+            linux_arm:
+                compext: .tar.gz
+                path_prefix: ssh-vault_{{.Version}}_{{.OS}}_{{.Arch}}/
+            linux_amd64:
+                compext: .tar.gz
+                path_prefix: ssh-vault_{{.Version}}_{{.OS}}_{{.Arch}}/
+            darwin_amd64:
+                compext: .zip
+                path_prefix: ssh-vault_{{.Version}}_{{.OS}}_{{.Arch}}/
+            windows_amd64:
+                compext: .zip
+                ext: .exe
+        versions:
+          - version: '0.12.3'
+            os_arch:
+                linux_arm:
+                    sha256sum: 579764e80717cf21607d5e6b834d27f87296d452a244c90fb2cdd279c8f0c32d
+                linux_amd64:
+                    sha256sum: 02f3024fc9cb6b6de9b9bb3ce56ed6dc0188c246c82eb2eae3f18e7c8114d843
+                darwin_amd64:
+                    sha256sum: 55545c771902e1f2f8f1efd6bc2773fb73d65d294fc46b2373c4035e3e922f98
+                windows_amd64:
+                    sha256sum: b46e2618757fef60d9c06288d8c923c25080605186666ae7ecb639e255f555a3
