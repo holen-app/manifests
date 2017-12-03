@@ -1,0 +1,28 @@
+#!/usr/bin/env holen
+---
+desc: A simple, fast and user-friendly alternative to find.
+strategies:
+    binary:
+        base_url: https://github.com/sharkdp/fd/releases/download/v{{.Version}}/fd-v{{.Version}}-{{.OSArchData.ext}}
+        unpack_path: "{{.OSArchData.unpack_path}}"
+        os_arch:
+            linux_amd64:
+                unpack_path: fd-v{{.Version}}-{{.OSArchData.osarch}}/fd
+                ext: "{{.OSArchData.osarch}}.tar.gz"
+                osarch: x86_64-unknown-linux-gnu
+            darwin_amd64:
+                unpack_path: fd-v{{.Version}}-{{.OSArchData.osarch}}/fd
+                ext: "{{.OSArchData.osarch}}.tar.gz"
+                osarch: x86_64-apple-darwin
+            windows_amd64:
+                unpack_path: fd.exe
+                ext: x86_64-pc-windows-msvc.zip
+        versions:
+          - version: '6.0.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 2b0948e6ff689a1017263e8a7ca3073f33cb9018b763181576d275f0fb940860
+                darwin_amd64:
+                    sha256sum: 39b5fac3ef7137f52b97edeed441e316a61743684ac2a7b496196b79c54930ed
+                windows_amd64:
+                    sha256sum: 0e7ab651f791978e252bbc98012a71001570f529bd17a0ae5532b1c4a6d24207
