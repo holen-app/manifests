@@ -10,6 +10,12 @@ strategies:
             darwin_amd64:
                 ext: Darwin-x86_64
         versions:
+          - version: '1.19.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 78734996d716113f9f9716d0b5064166e9475835e5000fd01b0480d19e1f7372
+                darwin_amd64:
+                    sha256sum: e3c802584bf40eb3e92ac082f3d3217d940c234b80b686510ede977c90d0715e
           - version: '1.9.0'
             os_arch:
                 linux_amd64:
