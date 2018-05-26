@@ -3,15 +3,33 @@
 desc: A Fast & Modern Static Website Engine
 strategies:
     binary:
-        base_url: https://github.com/spf13/hugo/releases/download/v{{.Version}}/hugo_{{.Version}}_{{.OSArchData.ext}}
-        unpack_path: hugo_{{.Version}}_{{.OSArch}}/hugo_{{.Version}}_{{.OSArch}}
+        base_url: https://github.com/gohugoio/hugo/releases/download/v{{.Version}}/hugo_{{.Version}}_{{.OSArchData.ext}}
+        unpack_path: hugo
         os_arch:
             linux_amd64:
                 ext: Linux-64bit.tar.gz
             darwin_amd64:
-                ext: MacOS-64bit.zip
+                ext: macOS-64bit.tar.gz
         versions:
+          - version: '0.41'
+            os_arch:
+                linux_amd64:
+                    sha256sum: e7f3b5f7552305020e426fa4a2bf1a1ca570886acc0f037b4d74e85a51fa175b
+                darwin_amd64:
+                    sha256sum: 0ca7ce3cbd7196bc77b0893b87e145474612350c6a8ec99484a31ada1595460b
+          - version: '0.40'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 9462d6a7ea097f2de6985b3c192386fe0f3c5bb9b8c07e2ebdba9529e0205cd7
+                darwin_amd64:
+                    sha256sum: 8da8c27e8a917c3170114c6fc7b95718ed1484730963c53fc98d45ec76eb5e0b
           - version: '0.17'
+            unpack_path: hugo_{{.Version}}_{{.OSArch}}/hugo_{{.Version}}_{{.OSArch}}
+            os_arch:
+                linux_amd64:
+                    ext: Linux-64bit.tar.gz
+                darwin_amd64:
+                    ext: MacOS-64bit.zip
           - version: '0.16'
             unpack_path: hugo
             os_arch:
