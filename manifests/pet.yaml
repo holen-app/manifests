@@ -3,13 +3,22 @@
 desc: Simple command-line snippet manager, written in Go.
 strategies:
     binary:
-        base_url: https://github.com/knqyf263/pet/releases/download/v{{.Version}}/pet_{{.Version}}_{{.OSArch}}.zip
+        base_url: https://github.com/knqyf263/pet/releases/download/v{{.Version}}/pet_{{.Version}}_{{.OSArch}}.tar.gz
         unpack_path: pet{{.OSArchData.fileext}}
         os_arch:
             windows_amd64:
                 ext: .exe
         versions:
+          - version: '0.3.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 224703f8faa1d87aaa3149b251e0cfdf375ccdc2a16f71e97e852cc20635624a
+                darwin_amd64:
+                    sha256sum: d67b55190343fd0957458eec9b97328dd2c155bae52eca21b01543f20873ca7a
+                windows_amd64:
+                    sha256sum: 2215eea1d32d0282b4cad4026a30269d6ced6e7cba9e8c43eaa786ef9c7e57ab
           - version: '0.2.2'
+            base_url: https://github.com/knqyf263/pet/releases/download/v{{.Version}}/pet_{{.Version}}_{{.OSArch}}.zip
             os_arch:
                 linux_amd64:
                     sha256sum: e5615c9be85e5f0a03d4bcb9da93aa7e74f92ef1f4d4144c5b466d08f566e51c
