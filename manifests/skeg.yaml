@@ -5,6 +5,12 @@ strategies:
     binary:
         base_url: https://github.com/skegio/skeg/releases/download/v{{.Version}}/skeg_{{.OSArch}}
         versions:
+          - version: '0.5.0-pre1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 3fdfbec65ec890e80ae90f10bffe0d6c688438e2d72dd70bebff8afc684757ea
+                darwin_amd64:
+                    sha256sum: 5eab0170ec21accdd061c343859b6229860df6208c4e8ab953ffa02a2e94b043
           - version: '0.4.0'
             os_arch:
                 linux_amd64:
