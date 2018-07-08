@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A complete, cross-platform solution to record, convert and stream audio and video.
+strategies:
+    docker:
+        image: jrottenberg/ffmpeg:{{.Version}}
+        mount_pwd: true
+        pwd_workdir: true
+        run_as_user: true
+        versions:
+          - version: 'latest'
+          - version: '4.0'
+          - version: '3.4'
+          - version: '3.3'
+          - version: '3.2'
+          - version: '3.1'
+          - version: '3.0'
+          - version: '2.8'
+...
