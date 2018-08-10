@@ -1,0 +1,12 @@
+#!/usr/bin/env holen
+---
+desc: The PDF Toolkit
+strategies:
+    docker:
+        image: mnuessler/pdftk:{{.Version}}
+        mount_pwd: true
+        pwd_workdir: true
+        run_as_user: true
+        versions:
+          - version: 'latest'
+...
