@@ -1,0 +1,27 @@
+#!/usr/bin/env holen
+---
+desc: A command line tool for DigitalOcean services
+strategies:
+    binary:
+        base_url: https://github.com/digitalocean/doctl/releases/download/v{{.Version}}/doctl-{{.Version}}-{{.OSArchData.tag}}{{.OSArchData.archext}}
+        unpack_path: doctl{{.OSArchData.ext}}
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+                archext: .tar.gz
+            darwin_amd64:
+                tag: darwin-10.6-amd64
+                archext: .tar.gz
+            windows_amd64:
+                tag: windows-4.0-amd64
+                ext: .exe
+                archext: .zip
+        versions:
+          - version: '1.9.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 7f25781fe5b59394d71cdab0eb353dcbfb6444d8c5b1351053c691d07adbfc51
+                darwin_amd64:
+                    sha256sum: 050fc7929a70619eaefd7700a7f47557119ad99405f8728d52de8dece9a7fc24
+                windows_amd64:
+                    sha256sum: 0de9a568ca132f0588326a2fd2fd9660c509f066bd506525a625b91ab272a9d7
