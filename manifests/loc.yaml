@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: Count lines of code quickly.
+strategies:
+    binary:
+        base_url: https://github.com/cgag/loc/releases/download/v{{.Version}}/loc-v{{.Version}}-{{.OSArchData.tag}}.tar.gz
+        unpack_path: loc
+        os_arch:
+            linux_amd64:
+                tag: x86_64-unknown-linux-gnu
+            darwin_amd64:
+                tag: x86_64-apple-darwin
+        versions:
+          - version: '0.3.4'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 1834258640d06e2ac94eca779892748fada08c53e62c03ba19ac6cb31bdf04c3
+                darwin_amd64:
+                    sha256sum: d231940d5d07e555d41f5bc0f1da31503e029ef0be9e3c2a3780b3a7e9ae62e3
