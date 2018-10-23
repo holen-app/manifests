@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A Fast & Modern Static Website Engine, extended edition
+strategies:
+    binary:
+        base_url: https://github.com/gohugoio/hugo/releases/download/v{{.Version}}/hugo_extended_{{.Version}}_{{.OSArchData.ext}}
+        unpack_path: hugo
+        os_arch:
+            linux_amd64:
+                ext: Linux-64bit.tar.gz
+            darwin_amd64:
+                ext: macOS-64bit.tar.gz
+        versions:
+          - version: '0.49.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: be6db985d1daf3494d317a3a7f9d30a43094d46c9a90c78724602d2ac0771c0f
+                darwin_amd64:
+                    sha256sum: 00bf013695cab81421cfabe6c8cbcb84276b679251f0dd0325c108fd84851786
