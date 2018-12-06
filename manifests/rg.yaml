@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: a line-oriented search tool that recursively searches your current directory
+strategies:
+    binary:
+        base_url: https://github.com/BurntSushi/ripgrep/releases/download/{{.Version}}/ripgrep-{{.Version}}-x86_64-{{.OSArchData.id}}.tar.gz
+        unpack_path: ripgrep-{{.Version}}-x86_64-{{.OSArchData.id}}/rg
+        os_arch:
+            linux_amd64:
+                id: unknown-linux-musl
+            darwin_amd64:
+                id: apple-darwin
+        versions:
+          - version: '0.10.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: c76080aa807a339b44139885d77d15ad60ab8cdd2c2fdaf345d0985625bc0f97
+                darwin_amd64:
+                    sha256sum: 32754b4173ac87a7bfffd436d601a49362676eb1841ab33440f2f49c002c8967
