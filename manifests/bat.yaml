@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A cat(1) clone with wings.
+strategies:
+    binary:
+        base_url: https://github.com/sharkdp/bat/releases/download/v{{.Version}}/bat-v{{.Version}}-x86_64-{{.OSArchData.id}}.tar.gz
+        unpack_path: bat-v{{.Version}}-x86_64-{{.OSArchData.id}}/bat
+        os_arch:
+            linux_amd64:
+                id: unknown-linux-gnu
+            darwin_amd64:
+                id: apple-darwin
+        versions:
+          - version: '0.9.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: cb531481d06305681103013f04db6af0a0f548b93923ecf3a4da8f8ffb84458a
+                darwin_amd64:
+                    sha256sum: ba5ec0f7751ca99f8d29b0993f1688c5333f2f6fd7979413e0b658eb0e33fc9e
