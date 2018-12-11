@@ -6,6 +6,12 @@ strategies:
         base_url: https://releases.hashicorp.com/vault/{{.Version}}/vault_{{.Version}}_{{.OSArch}}.zip
         unpack_path: vault
         versions:
+          - version: '1.0.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 75afb647d2ebeb46aafbf147ed1f1b379f6b8c9f909550dc2d0976cf153e8aa6
+                darwin_amd64:
+                    sha256sum: 1bb19dbfd96751d3b8e644dee592891167db5b2e0998d047c7365db312cd337c
           - version: '0.6.2'
             os_arch:
                 linux_amd64:
