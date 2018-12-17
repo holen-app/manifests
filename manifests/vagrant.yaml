@@ -1,0 +1,12 @@
+#!/usr/bin/env holen
+---
+desc: Development Environments Made Easy
+strategies:
+    binary:
+        base_url: https://releases.hashicorp.com/vagrant/{{.Version}}/vagrant_{{.Version}}_{{.OSArch}}.zip
+        unpack_path: vagrant
+        versions:
+          - version: '2.2.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 752e1849a6abbdecdd4b607854a7f01fa92ea6b81190cf106971e9b9dd068a57
