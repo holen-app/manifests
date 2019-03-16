@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Small Clojure interpreter and linter
+strategies:
+    binary:
+        base_url: https://github.com/candid82/joker/releases/download/v{{.Version}}/joker-{{.Version}}-{{.OS}}-{{.Arch}}.zip
+        unpack_path: joker
+        versions:
+          - version: '0.12.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: b95f28e02956111e00491cd70f9e0ff675365ad4fa551b1d40ac8a8bc33510e6
+                darwin_amd64:
+                    sha256sum: 05db16f7ed3bf41844145ff297295c0d4bf850d1d79fdea3b675e476ce97eb53
