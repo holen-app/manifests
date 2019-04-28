@@ -1,0 +1,25 @@
+#!/usr/bin/env holen
+---
+desc: NFPM is Not FPM - a simple deb and rpm packager written in Go
+strategies:
+    binary:
+        base_url: https://github.com/goreleaser/nfpm/releases/download/v{{.Version}}/nfpm_{{.Version}}_Linux_x86_64.tar.gz
+        unpack_path: nfpm
+        os_arch:
+            linux_amd64:
+                ext: Linux_x86_64.tar.gz
+            darwin_amd64:
+                ext: Darwin_x86_64.tar.gz
+        versions:
+          - version: '0.11.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: ca08ea98fa5620ff02c3f30ade5f7abf72dae2dad804e656c2a7a9f8ea98071c
+                darwin_amd64:
+                    sha256sum: f7822b1a8116b5504b2dee7c4a80e1c49d80d47ffddf49ca2450e496114f821e
+          - version: '0.9.5'
+            os_arch:
+                linux_amd64:
+                    sha256sum: f789b4ca9196685f66b60b709540b775819717d6183b80a3f8788bda02883948
+                darwin_amd64:
+                    sha256sum: 25274723130697d2ffc7f7db4a2ba2829c5fdcab2f6cc5f7b58c5c53924eb3b0
