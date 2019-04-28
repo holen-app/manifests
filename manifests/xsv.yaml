@@ -3,7 +3,7 @@
 desc: A fast CSV toolkit written in Rust.
 strategies:
     binary:
-        base_url: https://github.com/BurntSushi/xsv/releases/download/{{.Version}}/xsv-{{.Version}}-i686-{{.OSArchData.archext}}
+        base_url: https://github.com/BurntSushi/xsv/releases/download/{{.Version}}/xsv-{{.Version}}-x86_64-{{.OSArchData.archext}}
         unpack_path: xsv{{.OSArchData.ext}}
         os_arch:
             linux_amd64:
@@ -14,11 +14,19 @@ strategies:
                 archext: pc-windows-msvc.zip
                 ext: .exe
         versions:
+          - version: '0.13.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: d36b1be0f008d6597c2437e764fbe720eb7557f8980e0b03ca709e1020b5c52b
+                darwin_amd64:
+                    sha256sum: cbc1aa5f078ee3435ecb997e93afe6e3a03c5852393553cd2801000397cc269d
+                windows_amd64:
+                    sha256sum: 3e319c08456031a9683c19c998ac9f61756a2e456413db17c8e6819b17818a1a
           - version: '0.11.0'
             os_arch:
                 linux_amd64:
-                    sha256sum: 71231e38197ff27db01c3fdaf56a94f25339c7ffbed7f0162c51488f714fae35
+                    sha256sum: 14808b36bb4fbba7a3ac83b2e60aab59809616b61d4db78e8cfdfa0d909b7f29
                 darwin_amd64:
-                    sha256sum: 57378126357c3fc81da3cb7f568379b0b0f2accdf9d5f878f339bb1649c74b3e
+                    sha256sum: b35613b398ea0bfe283606d9cd4b8e7d9ae01f209b54b1c259b167761f338305
                 windows_amd64:
-                    sha256sum: fe14d942211cb052b43c32d6279b18f7c994825654278ec6fa5a2f43cd23d81e
+                    sha256sum: c6626caa8aee3d05b58bf68a768d8d79e0d198149346aa25dce864342b80360e
