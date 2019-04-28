@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A minimal and opinionated linter for Clojure code that sparks joy.
+strategies:
+    binary:
+        base_url: https://github.com/borkdude/clj-kondo/releases/download/v{{.Version}}/clj-kondo-{{.Version}}-{{.OSArchData.archtag}}.tar.gz
+        unpack_path: clj-kondo
+        os_arch:
+            linux_amd64:
+                archtag: linux-amd64
+            darwin_amd64:
+                archtag: macos-amd64
+        versions:
+          - version: '2019.04.25-alpha'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 3e1a90d2468854b0a522b9e90869604d20a283b0abad823328510b7ab281cfb3
+                darwin_amd64:
+                    sha256sum: 2e8e00a6753bcbd141cd6ce7e34836410496ce1c1022c8f4d36bc18655ffaf80
