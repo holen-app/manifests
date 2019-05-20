@@ -3,7 +3,7 @@
 desc: A minimal and opinionated linter for Clojure code that sparks joy.
 strategies:
     binary:
-        base_url: https://github.com/borkdude/clj-kondo/releases/download/v{{.Version}}/clj-kondo-{{.Version}}-{{.OSArchData.archtag}}.tar.gz
+        base_url: https://github.com/borkdude/clj-kondo/releases/download/v{{.Version}}/clj-kondo-{{.Version}}-{{.OSArchData.archtag}}.zip
         unpack_path: clj-kondo
         os_arch:
             linux_amd64:
@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 archtag: macos-amd64
         versions:
+          - version: '2019.05.19-alpha'
+            os_arch:
+                linux_amd64:
+                    sha256sum: bb13e4cc6d739f136b5309cb1a727c0cebf4944bc73497922e0b673ca9fe7909
+                darwin_amd64:
+                    sha256sum: def6ce46383e59b130a24e9ed14e9672e1d2dea2baa42aeb1a81076ad046fb16
           - version: '2019.05.12-alpha'
             os_arch:
                 linux_amd64:
@@ -18,12 +24,14 @@ strategies:
                 darwin_amd64:
                     sha256sum: f78611cdedab0986c3392bb81a551bfd61bfe5f3c2333f9c9ea3853d9e379d16
           - version: '2019.05.06-alpha'
+            base_url: https://github.com/borkdude/clj-kondo/releases/download/v{{.Version}}/clj-kondo-{{.Version}}-{{.OSArchData.archtag}}.tar.gz
             os_arch:
                 linux_amd64:
                     sha256sum: b2601d4a6c9f139a82c1894f250bc6f36158d74b55337162b9972445b46d142e
                 darwin_amd64:
                     sha256sum: 94034bbc5b6231bacf60d70f9b2ece858e3a1331ac0521a3c13e5b6bb913e18e
           - version: '2019.04.25-alpha'
+            base_url: https://github.com/borkdude/clj-kondo/releases/download/v{{.Version}}/clj-kondo-{{.Version}}-{{.OSArchData.archtag}}.tar.gz
             os_arch:
                 linux_amd64:
                     sha256sum: 3e1a90d2468854b0a522b9e90869604d20a283b0abad823328510b7ab281cfb3
