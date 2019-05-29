@@ -1,0 +1,18 @@
+#!/usr/bin/env holen
+---
+desc: Containerize your development environment.
+strategies:
+    binary:
+        base_url: https://github.com/stepchowfun/toast/releases/download/v{{.Version}}/toast-x86_64-{{.OSArchData.archext}}
+        os_arch:
+            linux_amd64:
+                archext: unknown-linux-gnu
+            darwin_amd64:
+                archext: apple-darwin
+        versions:
+          - version: '0.21.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 0a4137dba806713cad6c28a7b852087586aeef3d839fb8b569f581dda49b9fed
+                darwin_amd64:
+                    sha256sum: 0749eddf655be20869e5190571927917395d80c416f645c5f2774251ac141d95
