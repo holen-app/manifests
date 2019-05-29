@@ -3,13 +3,22 @@
 desc: Command line interface for running commands against Kubernetes clusters
 strategies:
     binary:
-        base_url: https://dl.k8s.io/v{{.Version}}/kubernetes-client-{{.OS}}-{{.Arch}}.tar.gz
-        unpack_path: kubernetes/client/bin/kubectl{{.OSArchData.ext}}
+        base_url: https://storage.googleapis.com/kubernetes-release/release/v{{.Version}}/bin/{{.OS}}/{{.Arch}}/kubectl{{.OSArchData.ext}}
         os_arch:
             windows_amd64:
                 ext: .exe
         versions:
+          - version: '1.14.2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 9daf696f5609ab41ac491886de5e87e35d8d3076f65defc27602a476800a97bf
+                darwin_amd64:
+                    sha256sum: b5faa4915076719742ef0f81245a34d1692658108240dced6d7fd5ef9e673dc0
+                windows_amd64:
+                    sha256sum: f1a397f56d5078009f348cbf23265c191e87e4a05ba5ebd54c53178ce685de01
           - version: '1.8.2'
+            base_url: https://dl.k8s.io/v{{.Version}}/kubernetes-client-{{.OS}}-{{.Arch}}.tar.gz
+            unpack_path: kubernetes/client/bin/kubectl{{.OSArchData.ext}}
             os_arch:
                 linux_arm:
                     sha256sum: a1cff2f8ab5f77f000e20f87b00a3723a8323fec82926afcc984722ab3f8d714
