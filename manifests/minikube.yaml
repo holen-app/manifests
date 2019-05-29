@@ -1,0 +1,15 @@
+#!/usr/bin/env holen
+---
+desc: Run Kubernetes locally
+strategies:
+    binary:
+        base_url: https://storage.googleapis.com/minikube/releases/v{{.Version}}/minikube-{{.OS}}-{{.Arch}}{{.OSArchData.ext}}
+        versions:
+          - version: '1.1.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 43ce88a10c7b57f5e4f83e5a1485e13e4ad537bfb20f7d57364f66450b872634
+                darwin_amd64:
+                    sha256sum: 3f635089d93ba7bd193b8f015bfa9434b810256daa8ced03816c7f0df7b06a96
+                windows_amd64:
+                    sha256sum: 2a8e95fbe4ec9b32c603767f16b731b5f09ddd04c3e43f6bbe7fffd22afbf811
