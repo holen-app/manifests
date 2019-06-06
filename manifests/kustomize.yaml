@@ -1,0 +1,18 @@
+#!/usr/bin/env holen
+---
+desc: Customization of kubernetes YAML configurations
+strategies:
+    binary:
+        base_url: https://github.com/kubernetes-sigs/kustomize/releases/download/v{{.Version}}/kustomize_{{.Version}}_{{.OSArch}}{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '2.0.3'
+            os_arch:
+                linux_amd64:
+                    sha256sum: a04d79a013827c9ebb0abfe9d41cbcedf507a0310386c8d9a7efec7a36f9d7a3
+                darwin_amd64:
+                    sha256sum: da4e4b7fe785a25997a0c34708faa6bce13d7847fc4d19d9ce46a0794098ba9b
+                windows_amd64:
+                    sha256sum: 7d8be317f58a245065e1ef57356631da81b0dbab40f5f7cfbe65b55d8d484b29
