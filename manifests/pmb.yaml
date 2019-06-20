@@ -5,6 +5,14 @@ strategies:
     binary:
         base_url: http://get.pmb.io/{{.Version}}/pmb_{{.OSArch}}
         versions:
+          - version: '2019-06-19-1813-6d963bd'
+            os_arch:
+                linux_arm:
+                    sha256sum: 1b1c408152cac7a78f7eca08e25f215eb4d54ea474d9f8c1cef0cb4604ba383b
+                linux_amd64:
+                    sha256sum: c93b8a83a3bc10787ad097afcefdad33a39a76550cf91d53976c37230366a81c
+                darwin_amd64:
+                    sha256sum: b5d32d681a2bb64b6da4e62d87207cbb17856b0fb2c5d18c7f230909852050df
           - version: '2019-06-16-1517-e00e85a'
             os_arch:
                 linux_arm:
