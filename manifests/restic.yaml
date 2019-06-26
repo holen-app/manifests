@@ -15,6 +15,14 @@ strategies:
                 ext: .exe
                 dlext: .zip
         versions:
+          - version: '0.9.5'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 08cd75e56a67161e9b16885816f04b2bf1fb5b03bc0677b0ccf3812781c1a2ec
+                darwin_amd64:
+                    sha256sum: bf1dcd0761b81ba9b79c01399083c6df74b709b44303ff01433753a9cc731caf
+                windows_amd64:
+                    sha256sum: 2c50ac9cc40a98a74c88cc3ee248e1550464009866d44356f1db0c3cc6433903
           - version: '0.9.2'
             os_arch:
                 linux_amd64:
