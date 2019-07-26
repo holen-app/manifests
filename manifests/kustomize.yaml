@@ -8,6 +8,12 @@ strategies:
             windows_amd64:
                 ext: .exe
         versions:
+          - version: '3.1.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 73acc575cf4e035a91da63ecffcabe58f9572562b772c1eb7ed863991950afe8
+                darwin_amd64:
+                    sha256sum: effe7811092d3434dad694aa888392519abaf8b3ed41b5adb35ab86ef50e6649
           - version: '2.0.3'
             os_arch:
                 linux_amd64:
