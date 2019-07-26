@@ -8,6 +8,14 @@ strategies:
             windows_amd64:
                 ext: .exe
         versions:
+          - version: '1.15.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: f4f4b855ab16ef295bc74f07edc77482d43e8fe81abc7cf92c476c4344788aa6
+                darwin_amd64:
+                    sha256sum: 7d988cd758b8f46721430454f2cc94d511112f183a5ebab9a84a8a8f1d14b36d
+                windows_amd64:
+                    sha256sum: d1f41a7a49e5528a20514c30159039e10d453cf4edcdfeabb0e880c6587a45bb
           - version: '1.14.2'
             os_arch:
                 linux_amd64:
