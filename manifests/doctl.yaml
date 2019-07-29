@@ -17,6 +17,14 @@ strategies:
                 ext: .exe
                 archext: .zip
         versions:
+          - version: '1.24.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 6415b74b40d800b87d96ea4de15251bca5323ee6b6f36c4c1b2a13802ad95679
+                darwin_amd64:
+                    sha256sum: 910a8e01930043c375b4c26c64053525419aef634e6bf6a78a6465fdbc56031a
+                windows_amd64:
+                    sha256sum: 01c5e7c1e4f9bd7dcfdf00f5dcc2a2ce158cca4ecd96ef406436baf9403cb3de
           - version: '1.9.0'
             os_arch:
                 linux_amd64:
