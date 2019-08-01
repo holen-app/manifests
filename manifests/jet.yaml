@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: CLI to transform JSON into EDN into Transit and vice versa.
+strategies:
+    binary:
+        base_url: https://github.com/borkdude/jet/releases/download/v{{.Version}}/jet-{{.Version}}-{{.OSArchData.tag}}.zip
+        unpack_path: jet
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+            darwin_amd64:
+                tag: macos-amd64
+        versions:
+          - version: '0.0.3'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 177092b3a6189bf972029541a899521953a4ec3c90d6f018ee9efdcc849c92ef
+                darwin_amd64:
+                    sha256sum: c2c62b28e51d9ca146b076777ade53e35cd06476c02c932f0d79ea07d51925b8
