@@ -1,0 +1,13 @@
+#!/usr/bin/env holen
+---
+desc: Command line interface to JMESPath
+strategies:
+    binary:
+        base_url: https://github.com/jmespath/jp/releases/download/{{.Version}}/jp-{{.OS}}-{{.Arch}}
+        versions:
+          - version: '0.1.3'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 9ccd06ae9032090e36702bc380d0785ee8a45fd827b84832730aa7c15ef01b1d
+                darwin_amd64:
+                    sha256sum: 3055e5692ac9db38c78bebb295c19a22c9c715979a94df3e8deb720540348866
