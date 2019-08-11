@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A tiny, pure and fast implementation of Clojure in Clojure for shell scripting.
+strategies:
+    binary:
+        base_url: https://github.com/borkdude/babashka/releases/download/v{{.Version}}/babashka-{{.Version}}-{{.OSArchData.tag}}.zip
+        unpack_path: bb
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+            darwin_amd64:
+                tag: macos-amd64
+        versions:
+          - version: '0.0.5'
+            os_arch:
+                linux_amd64:
+                    sha256sum: d7898234b83d2695c5d0852c5f57d92a12d866efef64e5ddbd5fc090dcce9214
+                darwin_amd64:
+                    sha256sum: be3a1246a5647de5e7fec7e402c0ed6c5e3dabc08360ccc280c6c2e3c539c4be
