@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 tag: macos-amd64
         versions:
+          - version: '0.0.7'
+            os_arch:
+                linux_amd64:
+                    sha256sum: cae14221af45129b4b13aa6a877bf7271aa38fdc85a6091a4e67ece9ad5fbd76
+                darwin_amd64:
+                    sha256sum: 78125fe035c17555b3b6abea6aaf0b5deaf1449639b554f9718365923e703fa0
           - version: '0.0.5'
             os_arch:
                 linux_amd64:
