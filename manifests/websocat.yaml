@@ -1,0 +1,18 @@
+#!/usr/bin/env holen
+---
+desc: Command-line client for WebSockets, like netcat (or curl) for ws:// with advanced socat-like functions
+strategies:
+    binary:
+        base_url: https://github.com/vi/websocat/releases/download/v{{.Version}}/websocat_{{.OSArchData.tag}}
+        os_arch:
+            linux_amd64:
+                tag: amd64-linux-static
+            darwin_amd64:
+                tag: mac
+        versions:
+          - version: '1.5.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 28c4abc5ae1bf1c3896164e5a4b7f966ba19da0059da50cb8ba40238049aa108
+                darwin_amd64:
+                    sha256sum: 5129e1d3e91f3cb9f10251ebb9581d1a2bb6d5e5367e70474ab4708f8fbfc7db
