@@ -6,6 +6,12 @@ strategies:
         base_url: https://github.com/candid82/joker/releases/download/v{{.Version}}/joker-{{.Version}}-{{.OS}}-{{.Arch}}.zip
         unpack_path: joker
         versions:
+          - version: '0.13.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: cb0269c88169d5c90a1ebe37fbb0971d5aa253bcc10cfd032e26aa80bc929eab
+                darwin_amd64:
+                    sha256sum: 9303df6b519172a62e0cd948359c9bed560911fbc4b027641840d357c289cdc5
           - version: '0.12.1'
             os_arch:
                 linux_amd64:
