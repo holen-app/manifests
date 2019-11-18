@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: Simple terminal UI for git commands
+strategies:
+    binary:
+        base_url: https://github.com/jesseduffield/lazygit/releases/download/v{{.Version}}/lazygit_{{.Version}}_{{.OSArchData.tag}}.tar.gz
+        unpack_path: lazygit
+        os_arch:
+            linux_amd64:
+                tag: Linux_x86_64
+            darwin_amd64:
+                tag: Darwin_x86_64
+        versions:
+          - version: '0.10.6'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 51d76a87bd6ac6f860d3940ee07178b02d20ffc79a3e1e2a857b02fd10517dde
+                darwin_amd64:
+                    sha256sum: f3bebb4b94d48a0cf94c22946c00c3374c125032bf38e89326e7fa15bd4d3bfb
