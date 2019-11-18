@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: The lazier way to manage everything docker
+strategies:
+    binary:
+        base_url: https://github.com/jesseduffield/lazydocker/releases/download/v{{.Version}}/lazydocker_{{.Version}}_{{.OSArchData.tag}}.tar.gz
+        unpack_path: lazydocker
+        os_arch:
+            linux_amd64:
+                tag: Linux_x86_64
+            darwin_amd64:
+                tag: Darwin_x86_64
+        versions:
+          - version: '0.7.6'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 71081c3bd6bc1b9b750c776b6a10b2716ffa924b66829fcf44f6fbdab6975417
+                darwin_amd64:
+                    sha256sum: 8321d4cd49eb6d3117990542b0bebb21659f2cdda601813508799c4c33be8f2d
