@@ -1,0 +1,21 @@
+#!/usr/bin/env holen
+---
+desc: Simple template processing command line tool to help build static websites
+strategies:
+    binary:
+        base_url: https://github.com/retrogradeorbit/bootleg/releases/download/v{{.Version}}/bootleg-{{.Version}}-{{.OSArchData.tag}}.{{.OSArchData.dlext}}
+        unpack_path: bootleg
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+                dlext: tgz
+            darwin_amd64:
+                tag: macos-amd64
+                dlext: zip
+        versions:
+          - version: '0.1.6-1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 50006950f9ff90ba8396543b1071cc2a7730b762e6d05a1ebf58048adb115e45
+                darwin_amd64:
+                    sha256sum: 641a6ddf4f686d3efc44a7513d6a075749aff991dac02c48f38b8ffdaeab90fb
