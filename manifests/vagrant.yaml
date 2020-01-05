@@ -6,6 +6,10 @@ strategies:
         base_url: https://releases.hashicorp.com/vagrant/{{.Version}}/vagrant_{{.Version}}_{{.OSArch}}.zip
         unpack_path: vagrant
         versions:
+          - version: '2.2.6'
+            os_arch:
+                linux_amd64:
+                    sha256sum: a08c7765baae1ee88b3bc0bace718087a84e2023d1f2ecc134aa735b89515a03
           - version: '2.2.3'
             os_arch:
                 linux_amd64:
