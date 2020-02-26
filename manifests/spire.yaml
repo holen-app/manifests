@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: pragmatic provisioning using clojure
+strategies:
+    binary:
+        base_url: https://github.com/epiccastle/spire/releases/download/v{{.Version}}/spire-{{.Version}}-{{.OSArchData.ext}}
+        unpack_path: spire
+        os_arch:
+            linux_amd64:
+                ext: linux-amd64.tgz
+            darwin_amd64:
+                ext: macos-amd64.zip
+        versions:
+          - version: '0.1.0-alpha.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: d31fb70523e4b9a07cc1365ef7392292f14cf1dcfb9b593b98fb089c5752e2e7
+                darwin_amd64:
+                    sha256sum: d5bfd1cb8dcad88820cc6438edaf1e3d7704b93f083e8e6c33045b027ce7cdb8
