@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A more intuitive version of du in rust
+strategies:
+    binary:
+        base_url: https://github.com/bootandy/dust/releases/download/v{{.Version}}/dust-v{{.Version}}-x86_64-{{.OSArchData.id}}.tar.gz
+        unpack_path: dust-v{{.Version}}-x86_64-{{.OSArchData.id}}/dust
+        os_arch:
+            linux_amd64:
+                id: unknown-linux-gnu
+            darwin_amd64:
+                id: apple-darwin
+        versions:
+          - version: '0.5.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: aeb7865ac96dca7077bc8418e1ab6b397417c588ddbb13df2979e91a66ce7ce7
+                darwin_amd64:
+                    sha256sum: 7777733c2554a4229a1dd15372266ceab40222eb157cc2db7ca8de0bd257134e
