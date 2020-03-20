@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A port of the clojure CLI bash script to Clojure.
+strategies:
+    binary:
+        base_url: https://github.com/borkdude/deps.clj/releases/download/v{{.Version}}/deps.clj-{{.Version}}-{{.OSArchData.tag}}.zip
+        unpack_path: deps.exe
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+            darwin_amd64:
+                tag: macos-amd64
+        versions:
+          - version: '0.0.8'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 3b45e9dc962da58a4bd527cc8f98470f6865e7cc34261768842f88140232d9f0
+                darwin_amd64:
+                    sha256sum: dff6c763915cac29b72de17ea451690618709a5a428baa4e0d39b707948a6779
