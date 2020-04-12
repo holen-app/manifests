@@ -1,0 +1,14 @@
+#!/usr/bin/env holen
+---
+desc: Make tables from data in your terminal
+strategies:
+    binary:
+        base_url: https://github.com/justone/tabl/releases/download/v{{.Version}}/tabl-{{.OSArchData.tag}}
+        os_arch:
+            linux_amd64:
+                tag: linux-x86_64
+        versions:
+          - version: '0.0.0-pre2'
+            os_arch:
+                linux_amd64:
+                    sha256sum: ee535e67988c6ae41aa0aa4be5a22bdbda1f10e4909902906ea37b200e98a2b6
