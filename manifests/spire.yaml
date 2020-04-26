@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 ext: macos-amd64.zip
         versions:
+          - version: '0.1.0-alpha.6'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 786153458fa0b5b4232f3c7b7520942daf72ace6cecb975a49b8179b91138584
+                darwin_amd64:
+                    sha256sum: 13fa1795eeb6e478c05b5edab7562471e4e88317301940cded6a834322386051
           - version: '0.1.0-alpha.2'
             os_arch:
                 linux_amd64:
