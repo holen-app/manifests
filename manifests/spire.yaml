@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 ext: macos-amd64.zip
         versions:
+          - version: '0.1.0-alpha.10'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 96f84b5b5641159a39e66a8ad1c2697df0dd267b6a5fa74c3497761b48ec8611
+                darwin_amd64:
+                    sha256sum: 9691790ca2fa50fe8a58078e8691d49c1b6eedf0e577890ae0ca1347b1ea4344
           - version: '0.1.0-alpha.9'
             os_arch:
                 linux_amd64:
@@ -23,21 +29,3 @@ strategies:
                     sha256sum: f2315f7f10c73fe8e2bb70cce104988fa1a7ed7173fb81a11ccca4dbd099fae5
                 darwin_amd64:
                     sha256sum: b79df7dbb4fe0e246d1d2e3b12ec388c73fdb18a83ff7e67f5c70192a68d076f
-          - version: '0.1.0-alpha.6'
-            os_arch:
-                linux_amd64:
-                    sha256sum: 786153458fa0b5b4232f3c7b7520942daf72ace6cecb975a49b8179b91138584
-                darwin_amd64:
-                    sha256sum: 13fa1795eeb6e478c05b5edab7562471e4e88317301940cded6a834322386051
-          - version: '0.1.0-alpha.2'
-            os_arch:
-                linux_amd64:
-                    sha256sum: e9be7335e11e31595ef91a36c849d3ca283fa071909c12d530d013463e79cb31
-                darwin_amd64:
-                    sha256sum: b79df7dbb4fe0e246d1d2e3b12ec388c73fdb18a83ff7e67f5c70192a68d076f
-          - version: '0.1.0-alpha.1'
-            os_arch:
-                linux_amd64:
-                    sha256sum: d31fb70523e4b9a07cc1365ef7392292f14cf1dcfb9b593b98fb089c5752e2e7
-                darwin_amd64:
-                    sha256sum: d5bfd1cb8dcad88820cc6438edaf1e3d7704b93f083e8e6c33045b027ce7cdb8
