@@ -7,6 +7,8 @@ strategies:
         base_url: https://github.com/restic/restic/releases/download/v{{.Version}}/restic_{{.Version}}_{{.OSArch}}{{.OSArchData.dlext}}
         unpack_path: restic_{{.Version}}_{{.OSArch}}{{.OSArchData.fileext}}
         os_arch:
+            linux_arm:
+                dlext: .bz2
             linux_amd64:
                 dlext: .bz2
             darwin_amd64:
@@ -17,6 +19,8 @@ strategies:
         versions:
           - version: '0.9.5'
             os_arch:
+                linux_arm:
+                    sha256sum: 887b0d18cc4158752105774b5b332ab290a51f08e2602b5c140bc2b1368d1b79
                 linux_amd64:
                     sha256sum: 08cd75e56a67161e9b16885816f04b2bf1fb5b03bc0677b0ccf3812781c1a2ec
                 darwin_amd64:
