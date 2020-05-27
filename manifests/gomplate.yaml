@@ -1,0 +1,18 @@
+#!/usr/bin/env holen
+---
+desc: A flexible commandline tool for template rendering. Supports lots of local and remote datasources.
+strategies:
+    binary:
+        base_url: https://github.com/hairyhenderson/gomplate/releases/download/v{{.Version}}/gomplate_{{.OS}}-{{.Arch}}{{.OSArchData.suffix}}
+        os_arch:
+            linux_arm:
+                suffix: v6
+        versions:
+          - version: '3.7.0'
+            os_arch:
+                linux_arm:
+                    sha256sum: ea31e1c81fc2bba02eba96caf37d872078f4d40139f1cf7dcacd6ec6c06ad611
+                linux_amd64:
+                    sha256sum: 27b0792309b78cd872ffe72a040475b2704f72e055a774079c9fcc5ac23543f6
+                darwin_amd64:
+                    sha256sum: 00d0ac833d04a007a510c3fc21e363d873bd06b55c4693e610cd3601abb133d0
