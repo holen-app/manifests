@@ -1,0 +1,18 @@
+#!/usr/bin/env holen
+---
+desc: Freeze and thaw with Nippy at the command line
+strategies:
+    binary:
+        base_url: https://github.com/justone/brisk/releases/download/v{{.Version}}/brisk-{{.OSArchData.tag}}
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+            darwin_amd64:
+                tag: macos-amd64
+        versions:
+          - version: '0.1.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: c4393ebc1f4adb75ee6226df53c887dece8ee8a94c4d0997e479713d36562f6c
+                darwin_amd64:
+                    sha256sum: b8839b202c1aa38ceab851facf6465172848a7182270fa31fb4b74c275f85ab1
