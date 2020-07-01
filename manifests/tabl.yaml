@@ -3,12 +3,25 @@
 desc: Make tables from data in your terminal
 strategies:
     binary:
-        base_url: https://github.com/justone/tabl/releases/download/v{{.Version}}/tabl-{{.OSArchData.tag}}
+        base_url: https://github.com/justone/tabl/releases/download/v{{.Version}}/tabl-{{.Version}}-{{.OSArchData.tag}}.zip
+        unpack_path: tabl
         os_arch:
             linux_amd64:
-                tag: linux-x86_64
+                tag: linux-amd64
+            darwin_amd64:
+                tag: macos-amd64
         versions:
+          - version: '0.2.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 817995c26262c3226ed4459b027727be1b70d65cd88d75fb57b4bfc746e57cf8
+                darwin_amd64:
+                    sha256sum: 8bb77d850712e2f0cca23e9e44d6a5b164a810e22984ca6172a2e98e4fcea762
           - version: '0.0.0-pre2'
+            base_url: https://github.com/justone/tabl/releases/download/v{{.Version}}/tabl-{{.OSArchData.tag}}
+            os_arch:
+                linux_amd64:
+                    tag: linux-x86_64
             os_arch:
                 linux_amd64:
                     sha256sum: ee535e67988c6ae41aa0aa4be5a22bdbda1f10e4909902906ea37b200e98a2b6
