@@ -13,6 +13,12 @@ strategies:
                 tag: macos-amd64
                 dlext: zip
         versions:
+          - version: '0.1.9'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 54d42af283e21b1512327996925b134247dc275e941b86f26110d117dbd03117
+                darwin_amd64:
+                    sha256sum: f863f1fe573952afdf427460e5359aea585f9d8ad0b0eaf08089278bf59fcf1c
           - version: '0.1.8'
             os_arch:
                 linux_amd64:
