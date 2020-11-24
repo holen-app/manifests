@@ -1,0 +1,15 @@
+#!/usr/bin/env holen
+---
+desc: 1Password CLI
+strategies:
+    binary:
+        base_url: https://cache.agilebits.com/dist/1P/op/pkg/v{{.Version}}/op_{{.OSArchData.tag}}_v{{.Version}}.zip
+        unpack_path: op
+        os_arch:
+            linux_amd64:
+                tag: linux_amd64
+        versions:
+          - version: '1.8.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 4f257af9eeeca5d40d099e76e30322afbb44b0d34c052ec4fe3378deadefee68
