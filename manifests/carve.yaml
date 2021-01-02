@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A CLI interface to carve, a library to find and remove unused Clojure code
+strategies:
+    binary:
+        base_url: https://github.com/borkdude/carve/releases/download/v{{.Version}}/carve-{{.Version}}-{{.OSArchData.tag}}.zip
+        unpack_path: carve
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+            darwin_amd64:
+                tag: macos-amd64
+        versions:
+          - version: '0.0.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: a0609bc276af6a54f315a1727b16fa2171e2175ab6a18ba1b9639936f83fe4e5
+                darwin_amd64:
+                    sha256sum: 2d86bebd8ad44a93f85f99fc66815d072cf968da44e6840f59d0219008328be1
