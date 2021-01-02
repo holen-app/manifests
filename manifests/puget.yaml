@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A CLI interface to puget, a colorizing Clojure data printer
+strategies:
+    binary:
+        base_url: https://github.com/borkdude/puget-cli/releases/download/v{{.Version}}/puget-cli-{{.Version}}-{{.OSArchData.tag}}.zip
+        unpack_path: puget
+        os_arch:
+            linux_amd64:
+                tag: linux-amd64
+            darwin_amd64:
+                tag: macos-amd64
+        versions:
+          - version: '0.0.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 4287c9f9d013b0a7cac797205318e51e93455d37cb24052fd64bfd5816417ae1
+                darwin_amd64:
+                    sha256sum: f11460a98120ee41d479c93989f7954d3a6b3a1095db4b314e7270f54171a8aa
