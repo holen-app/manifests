@@ -7,16 +7,22 @@ strategies:
         os_arch:
             linux_amd64:
                 suffix: linux-amd64
-            darwin_amd64:
-                suffix: darwin-amd64
             windows_amd64:
-                suffix: windows-386
+                suffix: windows-386.exe
         versions:
+          - version: '6.2.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 1d87a634cd22de9c9cf0cbbbd710651622414ecc556e9c91c9acdc5f07329c6e
+                windows_amd64:
+                    sha256sum: 76d4ebf91e52c16588b0fe04866221934f0cbeb5d7a94eac03a5d4437d6c43a5
           - version: '3.7.0'
             os_arch:
                 linux_amd64:
                     sha256sum: 0ff59eb412eff4beebd71f3431bd325d1d07190fe0e22f9ca433502efb17f4c4
                 darwin_amd64:
                     sha256sum: d17dfd93591efeaaceaca8d2eba8371f2ecc1543c4dc5d4441333c557330b04a
+                    suffix: darwin-amd64
                 windows_amd64:
                     sha256sum: 1f9ec49cc9ebbd415d41d5f2e252fe70a1d12d072e1abf065c3be3322b0d255d
+                    suffix: windows-386
