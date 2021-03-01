@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 archtag: macos-amd64
         versions:
+          - version: '2021.02.28'
+            os_arch:
+                linux_amd64:
+                    sha256sum: c5bd0947e4f95c228b74485d4506e9b9e79a114c729ce7bcc7a6f1ab49c85493
+                darwin_amd64:
+                    sha256sum: dca379d81aa849afff7d7a3e9100d073af08ef64cac12c2400b72d1cc68bddae
           - version: '2021.02.13'
             os_arch:
                 linux_amd64:
