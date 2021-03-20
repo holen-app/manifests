@@ -3,7 +3,7 @@
 desc: A tiny, pure and fast implementation of Clojure in Clojure for shell scripting.
 strategies:
     binary:
-        base_url: https://github.com/borkdude/babashka/releases/download/v{{.Version}}/babashka-{{.Version}}-{{.OSArchData.tag}}.zip
+        base_url: https://github.com/borkdude/babashka/releases/download/v{{.Version}}/babashka-{{.Version}}-{{.OSArchData.tag}}.tar.gz
         unpack_path: bb
         os_arch:
             linux_amd64:
@@ -11,7 +11,19 @@ strategies:
             darwin_amd64:
                 tag: macos-amd64
         versions:
-          - version: '0.2.13'
+          - version: '0.3.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: c751cd278d67ce0c7a3b13861787cb081ff6eefa1e529b61fbb2878413b9c103
+                darwin_amd64:
+                    sha256sum: cfe78b3c93eac0911b6ac5c25ce683ebe6bfd2772ddad7a28a16430363254817
+          - base_url: https://github.com/borkdude/babashka/releases/download/v{{.Version}}/babashka-{{.Version}}-{{.OSArchData.tag}}.zip
+            os_arch:
+                linux_amd64:
+                    tag: linux-amd64
+                darwin_amd64:
+                    tag: macos-amd64
+            version: '0.2.13'
             os_arch:
                 linux_amd64:
                     sha256sum: 7fb8a5815a343698d0d66dad5da2d6631fbe4cf97b7a21ac52c5d10dbe3a7c2c
