@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: Language Server (LSP) for Clojure
+strategies:
+    binary:
+        base_url: https://github.com/clojure-lsp/clojure-lsp/releases/download/{{.Version}}/clojure-lsp-native-{{.OSArchData.archtag}}.zip
+        unpack_path: clojure-lsp
+        os_arch:
+            linux_amd64:
+                archtag: static-linux-amd64
+            darwin_amd64:
+                archtag: macos-amd64
+        versions:
+          - version: '2021.07.19-14.46.52'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 820fb817daeafc76ec7840567abaf2d4a4c222e2f30777e98cff35358e693530
+                darwin_amd64:
+                    sha256sum: 67b5ff9312f04bf284c2b02f710ddde029e403bc1e012567b6815ea51c0e2a0a
