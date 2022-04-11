@@ -3,8 +3,16 @@
 desc: Personal Message Bus
 strategies:
     binary:
-        base_url: http://get.pmb.io/{{.Version}}/pmb_{{.OSArch}}
+        base_url: http://pmb-dl.endot.org/{{.Version}}/pmb_{{.OSArch}}
         versions:
+          - version: '2022-04-11-1038-07760d0'
+            os_arch:
+                linux_arm:
+                    sha256sum: 41014854e9a796b948e0e01b5ab14342e79347c8957472aefa2cb7c731d0a22e
+                linux_amd64:
+                    sha256sum: 1c79793fcb217e65b48fa770063b5fb913e105e1bc55f66ee7ef3a00775c1442
+                darwin_amd64:
+                    sha256sum: 8e4874b7af80481ac75099e79d17973afb5b4a763bae6ae386dcd60d51d6782b
           - version: '2019-08-25-1331-07760d0'
             os_arch:
                 linux_arm:
