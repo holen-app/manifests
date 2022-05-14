@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: a diff that understands syntax
+strategies:
+    binary:
+        base_url: https://github.com/Wilfred/difftastic/releases/download/{{.Version}}/difft-x86_64-{{.OSArchData.archtag}}.tar.gz
+        unpack_path: difft
+        os_arch:
+            linux_amd64:
+                archtag: unknown-linux-gnu
+            darwin_amd64:
+                archtag: apple-darwin
+        versions:
+          - version: '0.28.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: de5734c317a35d66a88dae14e2a021e7b24421a7937ce09c2674be71bed88c1f
+                darwin_amd64:
+                    sha256sum: ab890b24cb11da456c0fb0fd08e8d5d7bcf9140edd23b4641518e19f26271668
