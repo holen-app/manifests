@@ -7,10 +7,16 @@ strategies:
         unpack_path: bat-v{{.Version}}-x86_64-{{.OSArchData.id}}/bat
         os_arch:
             linux_amd64:
-                id: unknown-linux-gnu
+                id: unknown-linux-musl
             darwin_amd64:
                 id: apple-darwin
         versions:
+          - version: '0.21.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 5e6d199219578fed98483ad132f8207edc23bd072b36c22237edd51aed6b2af9
+                darwin_amd64:
+                    sha256sum: 7b0bf052aff98dbe4b5f259b0d3a8b320b5ee03fbde6a31bb0b4a08ad0ce58aa
           - version: '0.18.2'
             os_arch:
                 linux_amd64:
