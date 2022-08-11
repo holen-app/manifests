@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 id: apple-darwin
         versions:
+          - version: '13.0.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: ee4e0751ab108b6da4f47c52da187d5177dc371f0f512a7caaec5434e711c091
+                darwin_amd64:
+                    sha256sum: 585c18350cb8d4392461edd6c921e6edd5a97cbfc03b567d7bd440423e118082
           - version: '12.1.0'
             os_arch:
                 linux_amd64:
