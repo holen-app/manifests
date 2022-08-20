@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 ext: macOS-64bit.tar.gz
         versions:
+          - version: '0.101.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 8c3adf2ace1604468325a6dd094bcc41c141c4a28a0c1ebbeb0022e714897595
+                darwin_amd64:
+                    sha256sum: 20388f56696d98362f7a6e1c8f3bfc622fddeff328640110a024713052a32b4d
           - version: '0.76.5'
             os_arch:
                 linux_amd64:
