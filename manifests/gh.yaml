@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: GitHub's official command line tool
+strategies:
+    binary:
+        base_url: https://github.com/cli/cli/releases/download/v{{.Version}}/gh_{{.Version}}_{{.OSArchData.tag}}.tar.gz
+        unpack_path: gh_{{.Version}}_{{.OSArchData.tag}}/bin/gh
+        os_arch:
+            linux_amd64:
+                tag: linux_amd64
+            darwin_amd64:
+                tag: macOS_amd64
+        versions:
+          - version: '2.14.4'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 673a3adff9a847298e39c4593877194198229c12a9a4f4333765e58de230ccb0
+                darwin_amd64:
+                    sha256sum: 2b79356ab25fb793e7cdf713e68e74bf23a838ad1ac1560e5f7743a02f9db98a
