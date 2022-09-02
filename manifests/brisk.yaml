@@ -3,14 +3,22 @@
 desc: Freeze and thaw with Nippy at the command line
 strategies:
     binary:
-        base_url: https://github.com/justone/brisk/releases/download/v{{.Version}}/brisk-{{.OSArchData.tag}}
+        base_url: https://github.com/justone/brisk/releases/download/v{{.Version}}/brisk-{{.OSArchData.tag}}.zip
+        unpack_path: brisk
         os_arch:
             linux_amd64:
                 tag: linux-amd64
             darwin_amd64:
                 tag: macos-amd64
         versions:
+          - version: '0.2.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 287e1830a7a539f5bb7c215d2e6f025eafe6954d37f8927a02868b4693ee6bd8
+                darwin_amd64:
+                    sha256sum: 6dfa8bb42c4ce23eed98fada97393cc7c49dab198a7e5efb467db5b3148942a4
           - version: '0.2.0'
+            base_url: https://github.com/justone/brisk/releases/download/v{{.Version}}/brisk-{{.OSArchData.tag}}
             os_arch:
                 linux_amd64:
                     sha256sum: 5422694ba6fb585ca47c7e1b4e39749d8d1620dad1f6757226e2b6a9dfe8863d
