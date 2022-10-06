@@ -3,10 +3,22 @@
 desc: 🌸  A command-line fuzzy finder written in Go
 strategies:
     binary:
-        base_url: https://github.com/junegunn/fzf-bin/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.tgz
+        base_url: https://github.com/junegunn/fzf/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.{{.OSArchData.ext}}
         unpack_path: fzf
+        os_arch:
+            linux_amd64:
+                ext: tar.gz
+            darwin_amd64:
+                ext: zip
         versions:
+          - version: '0.34.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 312739b4774b0edbe1b83c971e3c6bb902b90773d3331553753e3eba34c684c9
+                darwin_amd64:
+                    sha256sum: 58700241743c712ca7f54e3caa63013ffe265af5e128aa77b90ffc045c3c5424
           - version: '0.17.5'
+            base_url: https://github.com/junegunn/fzf-bin/releases/download/{{.Version}}/fzf-{{.Version}}-{{.OSArch}}.tgz
             os_arch:
                 linux_amd64:
                     sha256sum: 3020c7d4d43d524ff394df306337b6de873b9db0bd9cd9dc73cd80cbd6e0c2f8
