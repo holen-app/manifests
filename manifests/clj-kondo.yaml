@@ -7,13 +7,20 @@ strategies:
         unpack_path: clj-kondo
         os_arch:
             linux_amd64:
-                archtag: linux-amd64
+                archtag: linux-static-amd64
             darwin_amd64:
                 archtag: macos-amd64
         versions:
+          - version: '2022.10.05'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 9f81b8cc8a918d2e54dd79b0d0a8fab17422b5f5c8c2e145f9bb9ce685caa870
+                darwin_amd64:
+                    sha256sum: 1685424d7e4957a8338fd27809a4ef5819f3c0f2e40679c9ea1fc2354b8ae01c
           - version: '2022.08.03'
             os_arch:
                 linux_amd64:
+                    archtag: linux-amd64
                     sha256sum: 304c411c18005edb8c4efd30f603752440941318a915b3a8d4771e04419b433b
                 darwin_amd64:
                     sha256sum: 17fc7c8aa0ff76861f660bf0d651a29f89491480b86e9f0d5db3a493dacfeccb
