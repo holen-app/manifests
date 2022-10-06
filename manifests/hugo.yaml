@@ -9,13 +9,21 @@ strategies:
             linux_amd64:
                 ext: Linux-64bit.tar.gz
             darwin_amd64:
-                ext: macOS-64bit.tar.gz
+                ext: darwin-universal.tar.gz
         versions:
+          - version: '0.104.3'
+            os_arch:
+                linux_amd64:
+                    sha256sum: da45809872c2c3a318c277adcacd80d00f4e0cd4527640f67055beac3b642333
+                darwin_amd64:
+                    sha256sum: d353c5081d9beb228ac61c943a37051706e5c71f60a1cbac30559834d03ea98d
           - version: '0.101.0'
             os_arch:
                 linux_amd64:
+                    ext: Linux-64bit.tar.gz
                     sha256sum: 3a22bf2b467b861afa62bd0cd1c0bbd18e2c95cac0e0b61f3c7c8459c2b313eb
                 darwin_amd64:
+                    ext: macOS-64bit.tar.gz
                     sha256sum: 812f3826f2509e18e33e27be742fb6361754544b776be8e30f9143a6eb54b36f
           - version: '0.65.2'
             os_arch:
