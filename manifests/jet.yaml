@@ -3,7 +3,7 @@
 desc: CLI to transform JSON into EDN into Transit and vice versa.
 strategies:
     binary:
-        base_url: https://github.com/borkdude/jet/releases/download/v{{.Version}}/jet-{{.Version}}-{{.OSArchData.tag}}.zip
+        base_url: https://github.com/borkdude/jet/releases/download/v{{.Version}}/jet-{{.Version}}-{{.OSArchData.tag}}.tar.gz
         unpack_path: jet
         os_arch:
             linux_amd64:
@@ -11,7 +11,14 @@ strategies:
             darwin_amd64:
                 tag: macos-amd64
         versions:
+          - version: '0.3.21'
+            os_arch:
+                linux_amd64:
+                    sha256sum: c814c4275640fac5f70428f11ab57699faf88e6bcac7943cf1561a1fac0b8295
+                darwin_amd64:
+                    sha256sum: 6455e2bca4a0b7b1f1bdabbf6efe6ec9be2f81d62037183d6f81f4b45b85b659
           - version: '0.0.10'
+            base_url: https://github.com/borkdude/jet/releases/download/v{{.Version}}/jet-{{.Version}}-{{.OSArchData.tag}}.zip
             os_arch:
                 linux_amd64:
                     sha256sum: 264d5087fa30f3ef8b2d1d6d2391442147cedecfa4cc9da60a3911331547d3b4
