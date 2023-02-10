@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 ext: darwin-universal.tar.gz
         versions:
+          - version: '0.110.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: a1c97b69a96040e0911f8ce8c9718553c333727b5ffa969e59635837e3b4dcc3
+                darwin_amd64:
+                    sha256sum: 5c70a4d83a7633a289697e07e6ffd9f02c6f05b43210c257f59a2ca203967218
           - version: '0.104.3'
             os_arch:
                 linux_amd64:
