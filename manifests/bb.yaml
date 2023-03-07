@@ -7,10 +7,16 @@ strategies:
         unpack_path: bb
         os_arch:
             linux_amd64:
-                tag: linux-amd64
+                tag: linux-amd64-static
             darwin_amd64:
                 tag: macos-amd64
         versions:
+          - version: '1.2.174'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 58065366943eedac648d8c51bf72738c7581408bbb2c08077486e2741b3c8fef
+                darwin_amd64:
+                    sha256sum: 172856c2b180e5d61102489c277291ef0661d341f2e72a0a1b5a6df66a4b4e3e
           - version: '1.1.171'
             os_arch:
                 linux_amd64:
