@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 ext: zip
         versions:
+          - version: '0.39.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 933ab7849a1b37f491573a48c1674676258f828bd744f4a73229056b26cb21d0
+                darwin_amd64:
+                    sha256sum: a32912ba94f7dc2164ecc582c117041bb690b52f3d56d06f05825416e7f48131
           - version: '0.34.0'
             os_arch:
                 linux_amd64:
