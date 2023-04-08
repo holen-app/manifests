@@ -1,0 +1,19 @@
+#!/usr/bin/env holen
+---
+desc: A tool for glamorous shell scripts 🎀
+strategies:
+    binary:
+        base_url: https://github.com/charmbracelet/gum/releases/download/v{{.Version}}/gum_{{.Version}}_{{.OSArchData.override}}.tar.gz
+        unpack_path: gum
+        os_arch:
+            linux_amd64:
+                override: Linux_x86_64
+            darwin_amd64:
+                override: Darwin_x86_64
+        versions:
+          - version: '0.10.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: efdc3564afdb7b4b7566b5cab49dd3b82aa9c6c9880c2df1572dff2584d618c5
+                darwin_amd64:
+                    sha256sum: 41af5678b105d18dc5c9752c8a62ba67e54609846b3299b601c16c8ee84399cd
