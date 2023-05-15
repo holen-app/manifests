@@ -3,15 +3,24 @@
 desc: GitHub's official command line tool
 strategies:
     binary:
-        base_url: https://github.com/cli/cli/releases/download/v{{.Version}}/gh_{{.Version}}_{{.OSArchData.tag}}.tar.gz
+        base_url: https://github.com/cli/cli/releases/download/v{{.Version}}/gh_{{.Version}}_{{.OSArchData.tag}}.{{.OSArchData.suffix}}
         unpack_path: gh_{{.Version}}_{{.OSArchData.tag}}/bin/gh
         os_arch:
             linux_amd64:
                 tag: linux_amd64
+                suffix: tar.gz
             darwin_amd64:
                 tag: macOS_amd64
+                suffix: zip
         versions:
+          - version: '2.29.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 9fe05f43a11a7bf8eacf731422452d1997e6708d4160ef0efcb13c103320390e
+                darwin_amd64:
+                    sha256sum: e116d0f9c310450482cdcd7f4d2d1c7c4cab8d4f025a340260ce3f15329c5145
           - version: '2.21.1'
+            base_url: https://github.com/cli/cli/releases/download/v{{.Version}}/gh_{{.Version}}_{{.OSArchData.tag}}.tar.gz
             os_arch:
                 linux_amd64:
                     sha256sum: 0c0ab559721d2ff05df9d64fcdaca4f8f0b76d177832379116bd5c4d032fea88
