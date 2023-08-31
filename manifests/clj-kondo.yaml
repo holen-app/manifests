@@ -3,7 +3,7 @@
 desc: A minimal and opinionated linter for Clojure code that sparks joy.
 strategies:
     binary:
-        base_url: https://github.com/borkdude/clj-kondo/releases/download/v{{.Version}}/clj-kondo-{{.Version}}-{{.OSArchData.archtag}}.zip
+        base_url: https://github.com/clj-kondo/clj-kondo/releases/download/v{{.Version}}/clj-kondo-{{.Version}}-{{.OSArchData.archtag}}.zip
         unpack_path: clj-kondo
         os_arch:
             linux_amd64:
@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 archtag: macos-amd64
         versions:
+          - version: '2023.07.13'
+            os_arch:
+                linux_amd64:
+                    sha256sum: cf5c00b78988ef0f4e2b4d0c98a28eb6794f72a7561bf05e24b091263b845aca
+                darwin_amd64:
+                    sha256sum: 2dabc48b624f7bfab91fa74a1dca71db86398be295a5c5e187466341a2a3680b
           - version: '2023.05.26'
             os_arch:
                 linux_amd64:
