@@ -13,6 +13,12 @@ strategies:
                 tag: macOS_amd64
                 suffix: zip
         versions:
+          - version: '2.38.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: c56b80a03c3b4216cd1ab63f6c7bfa4c356c67bce265fc067953bec10cdf0f97
+                darwin_amd64:
+                    sha256sum: 71ffe7a5d9068a49d63a7094e51f6ffccbebeebb4a2669ce39950ffb42ee86e1
           - version: '2.33.0'
             os_arch:
                 linux_amd64:
