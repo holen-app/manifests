@@ -11,6 +11,12 @@ strategies:
             darwin_amd64:
                 archtag: apple-darwin
         versions:
+          - version: '0.52.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: bf870d5ac90db45c09f0db847c0b9173cd4e5de0de7fd7dd8923ce3c93f4ff1b
+                darwin_amd64:
+                    sha256sum: faacdc54b5b1c15f8e7f51fc3f4c053be7379d6abb558208043d8acdf13dfe62
           - version: '0.51.1'
             os_arch:
                 linux_amd64:
