@@ -10,7 +10,21 @@ strategies:
                 archtag: static-linux-amd64
             darwin_amd64:
                 archtag: macos-amd64
+            linux_arm64:
+                archtag: linux-aarch64
+            darwin_arm64:
+                archtag: macos-aarch64
         versions:
+          - version: '2024.03.13-13.11.00'
+            os_arch:
+                linux_arm64:
+                    sha256sum: 036d8e4184c1eee43a712201eb3a7e9dcaffc3a1396e1243070c44b3c5249e6d
+                linux_amd64:
+                    sha256sum: 455742a6d017e7b7b8040e72e97581f1da7e12c7f120e07f46ce3f955529dcd0
+                darwin_amd64:
+                    sha256sum: 87103a99b85a1868725edb0b0e95de89754b7f37492f333a79eecc1e1aa1cbc8
+                darwin_arm64:
+                    sha256sum: bc7f32c1c3484399863726b6b58b8ed426e3a8498497256c25110f5b34eab1c2
           - version: '2024.02.01-11.01.59'
             os_arch:
                 linux_amd64:
