@@ -16,11 +16,34 @@ strategies:
             windows_amd64:
                 ext: win64.exe
             linux_amd64:
-                ext: linux64
+                ext: linux-amd64
             darwin_amd64:
-                ext: osx-amd64
+                ext: macos-amd64
+            linux_arm64:
+                ext: linux-arm64
+            darwin_arm64:
+                ext: macos-arm64
         versions:
+          - version: '1.7.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 5942c9b0934e510ee61eb3e30273f1b3fe2590df93933a93d7c58b81d19c8ff5
+                darwin_amd64:
+                    sha256sum: 4155822bbf5ea90f5c79cf254665975eb4274d426d0709770c21774de5407443
+                linux_arm64:
+                    sha256sum: 4dd2d8a0661df0b22f1bb9a1f9830f06b6f3b8f7d91211a1ef5d7c4f06a8b4a5
+                darwin_arm64:
+                    sha256sum: 0bbe619e663e0de2c550be2fe0d240d076799d6f8a652b70fa04aea8a8362e8a
+                windows_amd64:
+                    sha256sum: 1965838b6d24bc4b1736faca70758857ba782167c01e18948f4d7d5402c9e766
           - version: '1.5'
+            os_arch:
+                windows_amd64:
+                    ext: win64.exe
+                linux_amd64:
+                    ext: linux64
+                darwin_amd64:
+                    ext: osx-amd64
           - version: '1.4'
             os_arch:
                 windows_amd64:
