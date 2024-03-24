@@ -3,19 +3,37 @@
 desc: a line-oriented search tool that recursively searches your current directory
 strategies:
     binary:
-        base_url: https://github.com/BurntSushi/ripgrep/releases/download/{{.Version}}/ripgrep-{{.Version}}-x86_64-{{.OSArchData.id}}.tar.gz
-        unpack_path: ripgrep-{{.Version}}-x86_64-{{.OSArchData.id}}/rg
+        base_url: https://github.com/BurntSushi/ripgrep/releases/download/{{.Version}}/ripgrep-{{.Version}}-{{.OSArchData.id}}.tar.gz
+        unpack_path: ripgrep-{{.Version}}-{{.OSArchData.id}}/rg
         os_arch:
             linux_amd64:
-                id: unknown-linux-musl
+                id: x86_64-unknown-linux-musl
             darwin_amd64:
-                id: apple-darwin
+                id: x86_64-apple-darwin
+            linux_arm64:
+                id: aarch64-unknown-linux-gnu
+            darwin_arm64:
+                id: aarch64-apple-darwin
         versions:
-          - version: '13.0.0'
+          - version: '14.1.0'
             os_arch:
                 linux_amd64:
+                    sha256sum: f84757b07f425fe5cf11d87df6644691c644a5cd2348a2c670894272999d3ba7
+                darwin_amd64:
+                    sha256sum: 4d882fc945e5a9b6080a5c0506f7fe4aaea191c1865355428dd4bfa096f974b5
+                linux_arm64:
+                    sha256sum: c8c210b99844fbf16b7a36d1c963e8351bca5ff2dd7c788f5fba4ac18ba8c60d
+                darwin_arm64:
+                    sha256sum: fc59ca3eaa5b5bcfa1488eeb80291bad0e8e2842e05d4400fc7b29d5ee4bd26b
+          - version: '13.0.0'
+            base_url: https://github.com/BurntSushi/ripgrep/releases/download/{{.Version}}/ripgrep-{{.Version}}-x86_64-{{.OSArchData.id}}.tar.gz
+            unpack_path: ripgrep-{{.Version}}-x86_64-{{.OSArchData.id}}/rg
+            os_arch:
+                linux_amd64:
+                    id: unknown-linux-musl
                     sha256sum: ee4e0751ab108b6da4f47c52da187d5177dc371f0f512a7caaec5434e711c091
                 darwin_amd64:
+                    id: apple-darwin
                     sha256sum: 585c18350cb8d4392461edd6c921e6edd5a97cbfc03b567d7bd440423e118082
           - version: '12.1.0'
             os_arch:
