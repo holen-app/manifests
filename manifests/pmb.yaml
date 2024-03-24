@@ -3,89 +3,22 @@
 desc: Personal Message Bus
 strategies:
     binary:
-        base_url: http://pmb-dl.endot.org/{{.Version}}/pmb_{{.OSArch}}
+        base_url: https://github.com/justone/pmb/releases/download/{{.Version}}/pmb_{{.OSArch}}{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
         versions:
-          - version: '2022-04-11-1038-07760d0'
+          - version: '2024-03-24-1449-7833ee7'
             os_arch:
-                linux_arm:
-                    sha256sum: 41014854e9a796b948e0e01b5ab14342e79347c8957472aefa2cb7c731d0a22e
                 linux_amd64:
-                    sha256sum: 1c79793fcb217e65b48fa770063b5fb913e105e1bc55f66ee7ef3a00775c1442
+                    sha256sum: 9ad8f499d8cc1fc68795797bcd8fe766f868f48f9f9819c2425ddfb71a350fdb
                 darwin_amd64:
-                    sha256sum: 8e4874b7af80481ac75099e79d17973afb5b4a763bae6ae386dcd60d51d6782b
-          - version: '2019-08-25-1331-07760d0'
-            os_arch:
-                linux_arm:
-                    sha256sum: 03946c3479accbc51d2ac644dffb92bdca9c539d5d61de6acf202c6e7f250480
-                linux_amd64:
-                    sha256sum: 727af8d3cbcbf3dd6710442aacddd4b8ead39302c143bb8b7789367942a80b2d
-                darwin_amd64:
-                    sha256sum: d4e157b349ad201fdff997e354bdd6f8a9c44e0a2fc665e7e922f370a394578f
-          - version: '2019-06-21-0851-a0cfe89'
-            os_arch:
-                linux_arm:
-                    sha256sum: 74c35002ca4b3fc78d1b0c3325484ec77ddb9abfb3ca03f2fb2dac5537277bd8
-                linux_amd64:
-                    sha256sum: 91f5418098954f09fcfe89a8f1fd67286b956e2f4b6ccd8e65b1bc1c91d6a6a3
-                darwin_amd64:
-                    sha256sum: cfbc264d45329d8f745f0edce8ac710e7723a312521dbb40f69f6ba47e6cfd75
-          - version: '2019-06-19-1813-6d963bd'
-            os_arch:
-                linux_arm:
-                    sha256sum: 1b1c408152cac7a78f7eca08e25f215eb4d54ea474d9f8c1cef0cb4604ba383b
-                linux_amd64:
-                    sha256sum: c93b8a83a3bc10787ad097afcefdad33a39a76550cf91d53976c37230366a81c
-                darwin_amd64:
-                    sha256sum: b5d32d681a2bb64b6da4e62d87207cbb17856b0fb2c5d18c7f230909852050df
-          - version: '2019-06-16-1517-e00e85a'
-            os_arch:
-                linux_arm:
-                    sha256sum: 7dd8a77f712bf33e1e898f79ffc2045a5695303b8852552657030fe48ac1c1c0
-                linux_amd64:
-                    sha256sum: e33c3ef634400ac0dcc19ee04241badcef1e0a8bafdbbd154729ce415dda24ab
-                darwin_amd64:
-                    sha256sum: 5a4fad16c66ffd8a0bf042a96ea39eafa5a9773d3db00fc66ff0ffa9a1f1b07b
-          - version: '2018-05-26-2015-6db018c'
-            os_arch:
-                linux_arm:
-                    sha256sum: f9cd58179402c39875b7c72aa55e6d28033ebd102880bb944d415424dd87deb7
-                linux_amd64:
-                    sha256sum: 11191bd0a6dccc56043bfdb5f94af6c7d582ad3657f02a06964f5d13640e9acb
-                darwin_amd64:
-                    sha256sum: 9436a41a958d7421f6bd4ad31b2ad15e839106a1688a11f5a5e0bf504d07257a
-          - version: '2018-05-09-0922-70db847'
-            os_arch:
-                linux_arm:
-                    sha256sum: 6bb4d8a67814c6231cebd6cd99a1fe9318c8a928d4d5d492d1ffcc9edd1e38fe
-                linux_amd64:
-                    sha256sum: 8d05f53373622c45cfeba4fba1310ceabbac070ca6864bca1606496ce2874552
-                darwin_amd64:
-                    sha256sum: 2a0a92628f52c5de6cca6720d3ce9b496da7c97d034e6e99fc4d4caba6d5cf38
-          - version: '2017-05-14-2020-a3e706c'
-            os_arch:
-                linux_arm:
-                    sha256sum: 7c19d1969c4841cebca792aa504540a80f3950dd5c0c50439c0583e1b7c568b3
-                linux_amd64:
-                    sha256sum: 06da2bf8f7fb89b2b8eb28d1842303c24a03858c03e0a128aa7270f782dd4b23
-                darwin_amd64:
-                    sha256sum: cd6f4bb37cd641a99345ba0a38c174aa8011ae861bf6c8be3d6c59b4b19172c9
-          - version: '2017-05-13-2032-1ca89fe'
-            os_arch:
-                linux_arm:
-                    sha256sum: 7b4c19a533e0e71be7eff36ec4bea76afc9fd2b6613198f4065525923c389042
-                linux_amd64:
-                    sha256sum: de44a2ce0572ab4c32b0b225b6649ff44ba70c0959a1f4ec3ff1d2a83d11a687
-                darwin_amd64:
-                    sha256sum: d1247982b150f115be5c781a49e45390d1f0ad2e5baf9d9db75aa04d29ac0037
-          - version: '2017-02-15-1850-4e77d66'
-            os_arch:
-                linux_arm:
-                    sha256sum: 35d364420da6c6c3e5a9a9c04f123fc3ad0f13c7ca95c6c904547b509ce7858b
-                linux_amd64:
-                    sha256sum: 3688a8eb4fe567d58c62a78a063cb39425de3fecb3fcccb9cc79f65d60424a40
-                darwin_amd64:
-                    sha256sum: 644777952f6ce81632c927264509f26c1581cfee8d16296f90d6d1479b211697
-          - version: '2017-01-22-0801-4abebbd'
-          - version: '2017-01-18-2024-1ba4b7f'
-          - version: '2016-07-20-1402-0293073'
+                    sha256sum: 6b9d600f99860cada40b7b2a35f83ebd3bca59d85a345aa3e99a960576f88feb
+                linux_arm64:
+                    sha256sum: 04221066b6cc1ecb04768a6b3e0e507d0bbe6311b5d560366c334bfd3da2d32f
+                darwin_arm64:
+                    sha256sum: 97f1f87d2358100c0687c4b6e0b42f2a09bac0420509e472e1ad4df5cad82ed2
+                windows_amd64:
+                    sha256sum: 34715800c2fd4251a558ccecd5c5e6b0dcf60cc845a2d84dce9f5d0a72138153
+
 ...
