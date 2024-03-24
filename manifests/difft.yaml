@@ -3,19 +3,36 @@
 desc: a diff that understands syntax
 strategies:
     binary:
-        base_url: https://github.com/Wilfred/difftastic/releases/download/{{.Version}}/difft-x86_64-{{.OSArchData.archtag}}.tar.gz
+        base_url: https://github.com/Wilfred/difftastic/releases/download/{{.Version}}/difft-{{.OSArchData.archtag}}.tar.gz
         unpack_path: difft
         os_arch:
             linux_amd64:
-                archtag: unknown-linux-gnu
+                archtag: x86_64-unknown-linux-gnu
             darwin_amd64:
-                archtag: apple-darwin
+                archtag: x86_64-apple-darwin
+            linux_arm64:
+                archtag: aarch64-unknown-linux-gnu
+            darwin_arm64:
+                archtag: aarch64-apple-darwin
         versions:
-          - version: '0.54.0'
+          - version: '0.56.1'
             os_arch:
                 linux_amd64:
+                    sha256sum: 2922fd79d294afb159e45ff1bc61e8951cd4e239ecfff668824f7f051397a14d
+                darwin_amd64:
+                    sha256sum: 289d968397637af1cb954f356b51cf3c55a1543d888859d2f5afdfabea291709
+                linux_arm64:
+                    sha256sum: f31cd7325eb4571267c86c8006ca94c620c92ecd3a9ad201bc9f18cad0efea7b
+                darwin_arm64:
+                    sha256sum: 0a96a538ff75e5b1741e1dfefce27dcaf5e61f841cce99051ecf37ccb469dbe8
+          - version: '0.54.0'
+            base_url: https://github.com/Wilfred/difftastic/releases/download/{{.Version}}/difft-x86_64-{{.OSArchData.archtag}}.tar.gz
+            os_arch:
+                linux_amd64:
+                    archtag: unknown-linux-gnu
                     sha256sum: 2ae84a81b35aa3937ea9398a06cda74a930fd79c835c37e86186d99673a07d29
                 darwin_amd64:
+                    archtag: apple-darwin
                     sha256sum: 38fd987c9746c4e4e605cb7ba9ec7b91b75f13661e3ec7006cc84ac258eb573a
           - version: '0.52.0'
             os_arch:
