@@ -10,7 +10,21 @@ strategies:
                 ext: tar.gz
             darwin_amd64:
                 ext: zip
+            linux_arm64:
+                ext: tar.gz
+            darwin_arm64:
+                ext: zip
         versions:
+          - version: '0.48.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 6cfce75aba3b22b454c8facb30aefd28c676d16f483493656c9b3e0fa3800f20
+                darwin_amd64:
+                    sha256sum: 69b9700464c9125f61cc3eeb7393dbe1c5a8c7e528b750d70968f4cb220a3523
+                linux_arm64:
+                    sha256sum: 9d4dc7dc8a31688e51f8e4b6bc7ea6e1fb1b688bfe9deab977063636e78ce94b
+                darwin_arm64:
+                    sha256sum: 5044d95f02da3611a5737778a100695736195d6c42b40f5c2112e25c2588b4aa
           - version: '0.39.0'
             os_arch:
                 linux_amd64:
