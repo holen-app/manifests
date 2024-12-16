@@ -6,11 +6,25 @@ strategies:
         base_url: https://github.com/borkdude/jet/releases/download/v{{.Version}}/jet-{{.Version}}-{{.OSArchData.tag}}.tar.gz
         unpack_path: jet
         os_arch:
+            linux_arm64:
+                tag: linux-aarch64
             linux_amd64:
                 tag: linux-amd64
+            darwin_arm64:
+                tag: macos-aarch64
             darwin_amd64:
                 tag: macos-amd64
         versions:
+          - version: '0.7.27'
+            os_arch:
+                linux_arm64:
+                    sha256sum: 798bf30761733297f700d69e9276c4cbcea709a766399af489ba2b0faafb0fa3
+                linux_amd64:
+                    sha256sum: 411e65cbe6ea94ea6994e22723cbc73843c715e29828cb3fb8ca6c5af639a68d
+                darwin_arm64:
+                    sha256sum: e8e7ad17e87e8f2b0fdc3bfac44d1c7a7537c2cd36e02056f44ecb91d1690c0e
+                darwin_amd64:
+                    sha256sum: 40a3ac0c7efc4c1d661a3d9146ffc34f71bb633c742f924253bd85e9e2dcb50e
           - version: '0.3.21'
             os_arch:
                 linux_amd64:
