@@ -12,7 +12,19 @@ strategies:
                 id: x86_64-apple-darwin
             linux_arm64:
                 id: aarch64-unknown-linux-gnu
+            darwin_arm64:
+                id: aarch64-apple-darwin
         versions:
+          - version: '0.25.0'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 93f47d76abe328c402ef712e9ac92aa6d5bc84d5adcbcaf0bbc5665e5275a941
+                darwin_amd64:
+                    sha256sum: b974aa834b6b65610090aed2bc7310d11c6f500105696d23a130aee24fd8380f
+                linux_arm64:
+                    sha256sum: ee0f12cf6006a79cf4ccf75d2ddcf9f6ba124644503244b1af909c2f72a2a9f7
+                darwin_arm64:
+                    sha256sum: b3ed5a7515545445881f1036f0cc1b708c2b86cbce01c1b4033f38e0cfcc7b3c
           - version: '0.24.0'
             os_arch:
                 linux_amd64:
