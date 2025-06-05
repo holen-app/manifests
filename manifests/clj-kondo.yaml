@@ -15,6 +15,16 @@ strategies:
             darwin_arm64:
                 archtag: macos-aarch64
         versions:
+          - version: '2025.06.05'
+            os_arch:
+                linux_amd64:
+                    sha256sum: cb1815afe77606de3c7d423ace6cf4e2043564062143cb2cbfc8e1a81c587cf3
+                linux_arm64:
+                    sha256sum: 612173bbaf69c3e787987f4cb0d0568b63be5c22bff5e13b7734b0109abcb95a
+                darwin_amd64:
+                    sha256sum: e3651c464044923457a5d5b23376121562fb560cb2e57f1b27ff2d7dc51212d3
+                darwin_arm64:
+                    sha256sum: 174d05387834f1c109e6348b01a105103d649231b59ecd03e877995ae23f63c3
           - version: '2025.04.07'
             os_arch:
                 linux_amd64:
