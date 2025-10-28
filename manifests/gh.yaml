@@ -19,6 +19,16 @@ strategies:
                 tag: macOS_arm64
                 suffix: zip
         versions:
+          - version: '2.82.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: afada88676dfccea384e6cc28ae990b3e31bbc55f9d75c4697f902c757fa462b
+                darwin_amd64:
+                    sha256sum: 83499edd5830f345e01e187e4593a46919bd7440b43c5aabe2442ae918cad9f1
+                linux_arm64:
+                    sha256sum: 80b467daabeabf4379b5b7138f4b8b47f56670cc615ab288361a602ce413d8bf
+                darwin_arm64:
+                    sha256sum: 8cf015d101a5a43bbf662155d47ba6242bd1a1630c814e764254efa86e448ba7
           - version: '2.46.0'
             os_arch:
                 linux_amd64:
