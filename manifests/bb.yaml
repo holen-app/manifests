@@ -17,10 +17,6 @@ strategies:
         versions:
           - version: '1.12.215'
             os_arch:
-e444283cdcc4b809fd409da56cf3791a60ed57eeef1f6a4c3ed186daf81de40e  babashka-1.12.215-linux-aarch64-static.tar.gz
-b1b975a54bff97d2ec1b0d712b34368d6add00bf5d3ca56fb2fa5f8f88526d45  babashka-1.12.215-linux-amd64-static.tar.gz
-a7e791110f3f873e3e26264eb471701d0bb5d8e1d1377b7d3132559fc4296417  babashka-1.12.215-macos-aarch64.tar.gz
-1ece4f02092b838372519b7a704d78a352089d028a59a30c94be87094f36a09a  babashka-1.12.215-macos-amd64.tar.gz
                 linux_arm64:
                     sha256sum: e444283cdcc4b809fd409da56cf3791a60ed57eeef1f6a4c3ed186daf81de40e
                 linux_amd64:
