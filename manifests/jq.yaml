@@ -21,11 +21,11 @@ strategies:
                 linux_amd64:
                     sha256sum: 020468de7539ce70ef1bceaf7cde2e8c4f2ca6c3afb84642aabc5c97d9fc2a0d
                 darwin_amd64:
-                    sha256sum: a9fe3ea2f86dfc72f6728417521ec9067b343277152b114f4e98d8cb0e263603
+                    sha256sum: e80dbe0d2a2597e3c11c404f03337b981d74b4a8504b70586c354b7697a7c27f
                 linux_arm64:
                     sha256sum: 6bc62f25981328edd3cfcfe6fe51b073f2d7e7710d7ef7fcdac28d4e384fc3d4
                 darwin_arm64:
-                    sha256sum: e80dbe0d2a2597e3c11c404f03337b981d74b4a8504b70586c354b7697a7c27f
+                    sha256sum: a9fe3ea2f86dfc72f6728417521ec9067b343277152b114f4e98d8cb0e263603
                 windows_amd64:
                     sha256sum: 23cb60a1354eed6bcc8d9b9735e8c7b388cd1fdcb75726b93bc299ef22dd9334
           - version: '1.7.1'
